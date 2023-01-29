@@ -1,0 +1,113 @@
+* {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* footer section */ 
+body > footer a {
+    text-decoration: none;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.card .name {
+  color: grey;
+  font-size: 18px;
+}
+.card h1 {
+	padding-top: 10px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+
+.margins {
+    width: 1000px;
+    margin: auto;
+}
+.title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #531E97;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+.text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+}
+.image {
+    background: -webkit-linear-gradient(-45deg, #531E97, #D00000);
+    min-height: 300px;
+    min-width: 300px;
+}
+.mRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.mColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.mNumber {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#531E97, #531E97, #D00000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+}
+.mText {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #D00000;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1060px) {
+    .margins {
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 810px) {
+    .margins {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 510px) {
+    .margins {
+        width: 350px;
+    }
+    .mRow {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .margins {
+        width: 300px;
+    }
+}
