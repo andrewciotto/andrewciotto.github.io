@@ -1,3 +1,11 @@
+@font-face {
+    font-family: robotoBlack;
+    src: url(../assets/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: nunitoblack;
+    src: url(../assets/Nunito/static/Nunito-Black.ttf);
+}
 * {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -5,190 +13,304 @@
 html {
     scroll-behavior: smooth;
     background: #343434;
+    scroll-behavior:smooth !important;
 }
 /* footer section */ 
 body > footer a {
     text-decoration: none;
+    scroll-behavior:smooth !important;
 }
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-}
-.card .name {
-  color: grey;
-  font-size: 18px;
-}
-.card h1 {
-	padding-top: 10px;
-}
-.card button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 16px;
-}
-.mainHeader {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.header {
-    height: 145px;
-    /* background: #f8ede5; FFD700 */
-    padding-top: 0px;
+
+.flexRow {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+}
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+.spaceBetween {
+    justify-content: space-between;
+}
+.flexCenter {
     align-items: center;
 }
-.headerTitle {
-    font-size: 100px;
-    color: #2a2a2a;
-    font-weight: bold;
-    font-family:  serif;
+.flexWrap {
+    flex-wrap: wrap;
+}
+.third {
+    width: 30%;
 }
 
-
+.header {
+    height: 100vh;
+    padding: 100px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.headerTitle {
+    font-size: 80px;
+    color: #0043FF;
+    line-height: 80px;
+    font-family: robotoBlack;
+    width: 800px;
+    text-align: left;
+}
+.callButton {
+    background-color: #0043FF;
+    border: 5px solid #0043FF;
+    border-radius: 50px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 20px 0;
+    width: 200px;
+    text-align: center;
+}
+.callButton2 {
+    background-color: #000000;
+    border: 5px solid #0043FF;
+    border-radius: 50px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 20px 0;
+    width: 200px;
+    text-align: center;
+}
+.callButton2:hover {
+    background-color: #0043FF;
+    color: white;
+}
+.callButton:hover {
+    background-color: #1B02A4;
+    color: white;
+}
+.logoTitle {
+    color: white;
+    font-size: 40px;
+}
 .margins {
     width: 1000px;
     margin: auto;
-}
-.titleBox {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-}
-.titleSquare {
-    background: -webkit-linear-gradient(-45deg, #D00000, #531E97);
-    min-height: 20px;
-    min-width: 20px;
-    margin: 0 5px 0 0;
-}
-.titleLine {
-    height: 10px;
-    width: 100%;
-    background: -webkit-linear-gradient(-45deg, #FFD700, #FFD700);
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
-.title {
-    font-family: serif;
-    font-weight: bold;
-    color: #2a2a2a;
-    width: 100%;
-    text-align: left;
-    font-size: 40px;
-    margin-bottom: -20px;
-    z-index: 2;
-}
-.shortTitle {
-    width: fit-content;
-}
-.firstTitle {
-    text-align: center;
     padding: 100px 0;
 }
-.titleButton {
-    padding: 15px 30px;
-    margin: 0 10px;
-    width: 50%;
+.num {
+   font-family: robotoBlack;
+   font-size: 140px; 
+   line-height: 100px;
+   text-align: center;
+   color: #1B02A4;
+}
+.numText {
     text-align: center;
-    border: solid thin #FFD700;
-    border-radius: 50px;
-    font-size: 18px;
-    background: #f8ede5;
-    color: #2a2a2a;
-    margin-bottom: -20px;
-}
-.titleButton:hover {
-    background: #521e97;
-    border: solid thin #531E97;
-    color: white;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-.text {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-    width: 100%;
-    padding: 10px;
-}
-.image {
-    border: #afafaf 1px solid;
-    min-height: 300px;
-    min-width: 300px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: grey;
-}
-.mRow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.mColumn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
-.investingCols {
-    width: 25%;
-    height: 100%;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.mNumber {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    /* background: -webkit-linear-gradient(#531E97, #531E97, #D00000); */
-    background: #531E97;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 100px;
-}
-.mText {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    color: #2a2a2a;
-    font-size: 20px;
+    font-size: 30px;
+    font-family: robotoBlack;
 }
 
+.blackBox {
+    background: black;
+    padding: 80px;
+    margin: 0 20px;
+}
+.greyBox {
+    background: #191919;
+}
+.sidePadding {
+    padding: 0 50px;
+}
+.whiteBox {
+    margin: 30px 0 0 0;
+    padding: 60px;
+}
+.overBox {
+    position: relative;
+    z-index: 1 !important;
+}
+.underBox {
+    position: relative;
+    z-index: 0 !important;
+    margin-top: -100px;
+    padding: 80px 100px 0 100px;
+}
+.blueTitle {
+    font-size: 50px;
+    color: #0043FF;
+    line-height: 50px;
+    font-family: robotoBlack;
+    text-align: left;
+    margin: 20px 0;
+}
+.blackTitle {
+    font-size: 30px;
+    color: #191919;
+    font-family: robotoBlack;
+    text-align: left;
+}
+.whiteText {
+    color: white;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.greyText {
+    color: #191919;
+    font-size: 20px;
+    height: 80px;
+    text-align: center;
+}
+.imgPlaceholder {
+    height: 400px;
+    width: 400px;
+    margin-top: -130px;
+    overflow: none;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+.bottomImg {
+    margin-top: 100px;
+    margin-bottom: -50px;
+}
+.landscapeImg {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+.whiteIcon {
+    color: white;
+}
+.speakerImg {
+    width: 80%;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+.speakerImg:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+.croppedImg {
+    width: 100%;
+    height: 100%;
+}
+.speakerBox {
+    width: 20%;
+    margin: 40px 0 0 0;
+}
+.footer {
+    align-items: center;
+    color: white;
+    height: 50px;
+    background: black;
+    padding: 0 50px;
+}
+.footerLink {
+    color: white;
+    text-decoration: none;
+}
+.footerLink:hover {
+    color: #c3c3c3;
+}
 @media only screen and (max-width: 1060px) {
     .margins {
         width: 800px;
     }
+    .speakerBox {
+        width: 33%;
+    }
+    .headerTitle {
+        width: 600px;
+    }
+    .num {
+        font-size: 100px;
+    }
 }
 @media only screen and (max-width: 810px) {
     .margins {
-        width: 500px;
+        width: 600px;
+        flex-wrap: wrap;
+    }
+    .numCol {
+        width: 50%;
+    }
+    .whiteText {
+        margin: 0;
+    }
+    .textCol {
+        flex-direction: column;
+    }
+    .imgPlaceholder {
+        margin: 0;
+    }
+    .bottomImg {
+        margin: 0;
+    }
+    .third {
+        width: 100%;
+    }
+    .header {
+        padding: 50px;
+    }
+    .headerTitle {
+        width: 450px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .speakerBox {
+        width: 50%;
     }
 }
 @media only screen and (max-width: 510px) {
     .margins {
-        width: 350px;
+        width: 400px;
+    }
+    .header {
+        padding: 50px;
+    }
+    .headerTitle {
+        width: 300px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .blackBox {
+        padding: 20px;
+    }
+    .underBox {
+        padding: 40px;
+    }
+    .imgPlaceholder {
+        width: 300px;
+        height: 300px;
+    }
+    .numCol {
+        width: 100%;
     }
     .mRow {
         flex-direction: column;
+    }
+    .sidePadding {
+        padding: 0;
+    }
+    .speakerBox {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 320px) {
     .margins {
         width: 300px;
+    }
+    .headerTitle {
+        width: 250px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .imgPlaceholder {
+        width: 250px;
+        height: 250px;
     }
 }
