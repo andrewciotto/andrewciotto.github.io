@@ -43,8 +43,12 @@ body > footer a {
     /* background-image: linear-gradient(180deg, #c8c8c8, #bcbcbc); */
     /* border: thin grey solid; */
     border-radius: 10px;
-    height: 150px;
+    height: 200px;
     padding: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .emptySpace {
     height: 150px;
