@@ -69,7 +69,7 @@ body > footer a {
     text-align: center;
 }
 .callButton {
-    background-color: #9D00FF; /*0043FF*/
+    background-color: #721cff; /*0043FF*/
     /* border: 5px solid #0043FF; */
     border-radius: 50px;
     margin: 5px;
@@ -120,7 +120,7 @@ body > footer a {
     align-items: center;
 }
 .mainPage {
-    background-image: linear-gradient(180deg, #161b23, lightgrey, lightgrey);
+    background-image: linear-gradient(180deg, #161b23, lightgrey, lightgrey, lightgrey);
     /* background-color: #161b23; */
     margin-top: 70vh;
     position: relative;
