@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: nunitoblack;
-    src: url(../assets/Nunito/static/Nunito-Black.ttf);
+    src: url(../assets/Nunito/static/Nunito-Medium.ttf);
 }
 * {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -39,28 +39,39 @@ body > footer a {
     flex-wrap: wrap;
 }
 .third {
-    width: 30%;
+    width: 32%;
+    background: #2e363f;
+    border: thin grey solid;
+    border-radius: 10px;
+    padding: 30px;
+    height: 202px;
+    margin: 5px 0;
 }
 
 .header {
-    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90vh;
     padding: 100px;
-    background-color: #000000;
+    background-color: #03001C;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    z-index: 0 !important;
 }
 .headerTitle {
     font-size: 80px;
     color: #0043FF;
     line-height: 80px;
     font-family: robotoBlack; /*nunitoblack robotoBlack*/
-    width: 800px;
-    text-align: left;
+    width: 100%;
+    text-align: center;
 }
 .callButton {
     background-color: #0043FF;
-    border: 5px solid #0043FF;
+    /* border: 5px solid #0043FF; */
     border-radius: 50px;
     margin: 5px;
     color: white;
@@ -69,53 +80,98 @@ body > footer a {
     padding: 20px 0;
     width: 200px;
     text-align: center;
+    position: relative;
+    z-index: 3;
 }
-.callButton2 {
-    background-color: #000000;
-    border: 5px solid #0043FF;
-    border-radius: 50px;
-    margin: 5px;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    padding: 20px 0;
-    width: 200px;
-    text-align: center;
-}
-.callButton2:hover {
-    background-color: #0043FF;
-    color: white;
+.centerButton {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .callButton:hover {
-    background-color: #1B02A4;
-    color: white;
+    background-color: transparent;
+    -webkit-box-shadow:inset 0px 0px 0px 5px #0043FF;
+    -moz-box-shadow:inset 0px 0px 0px 5px #0043FF;
+    box-shadow:inset 0px 0px 0px 5px #0043FF;
+}
+.callButton:active {
+    background-color: #0044ff4b;
+}
+.buttonMargin {
+    margin-top: 30px;
 }
 .logoTitle {
     color: white;
-    font-size: 40px;
+    height: 100px;
+    width: 322px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    cursor: pointer;
+    transition: all ease 0.5s;
 }
-.margins {
+.logoTitle:hover {
+    transform: scale(1.05);
+}
+.secondHeader {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainPage {
+    background-color: #343d46;
+    background-color: rgb(22, 27, 35);
+    margin-top: 70vh;
+    position: relative;
+    z-index: 1 !important;
+    
+    width: 100%; 
+    border-color: #000 transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+}
+
+
+.ecosystem {
     width: 1000px;
     margin: auto;
-    padding: 100px 0;
 }
 .num {
    font-family: robotoBlack;
    font-size: 140px; 
    line-height: 100px;
    text-align: center;
-   color: #1B02A4;
+   color: white;
 }
 .numText {
     text-align: center;
     font-size: 30px;
     font-family: robotoBlack;
+    color: white;
 }
-
+.wrapGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapList {
+    padding: 0 50px 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
 .blackBox {
-    background: black;
+    background: #2e363f;
     padding: 80px;
-    margin: 0 20px;
+    border: thin grey solid;
+    border-radius: 10px;
+}
+.whiteBox {
+    background-color: white;
 }
 .greyBox {
     background: #191919;
@@ -145,6 +201,24 @@ body > footer a {
     text-align: left;
     margin: 20px 0;
 }
+.whiteTitle {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    color: white;
+    line-height: 50px;
+    font-family: robotoBlack;
+    margin: 0 0 40px 0;
+}
+.darkBlueTitle {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    color: #1B02A4;
+    line-height: 50px;
+    font-family: robotoBlack;
+    margin: 0 0 40px 0;
+}
 .smallTitle {
     font-size: 30px;
     color: #0043FF;
@@ -153,17 +227,16 @@ body > footer a {
 }
 .blackTitle {
     font-size: 30px;
-    color: #191919;
+    color: white;
     font-family: robotoBlack;
     text-align: left;
 }
 .whiteText {
     color: white;
     font-size: 20px;
-    margin-right: 50px;
 }
 .greyText {
-    color: #191919;
+    color: white; /*191919*/
     font-size: 20px;
     height: 80px;
     text-align: center;
@@ -171,10 +244,9 @@ body > footer a {
 .imgPlaceholder {
     height: 400px;
     width: 400px;
-    margin-top: -130px;
     overflow: none;
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); */
 }
 .bottomImg {
     margin-top: 100px;
@@ -192,8 +264,8 @@ body > footer a {
     width: 80%;
     border-radius: 50%;
     overflow: hidden;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
     transition: all 0.5s ease;
 }
 .speakerImg:hover {
@@ -223,10 +295,9 @@ body > footer a {
     color: #c3c3c3;
 }
 .imageLink {
-    height: 80px;
+    height: 65px;
     cursor: pointer;
     transition: all 0.5s ease;
-    margin: 40px;
     /* -webkit-filter: grayscale(100%);
     filter: grayscale(100%); */
 }
@@ -237,28 +308,71 @@ body > footer a {
 .accImg {
     height: 100%;
     object-fit:cover;
+    transition: all ease-in-out 0.3s;
+}
+.partnerLogo {
+    width: 24%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    margin: 5px;
+    transition: all ease-in-out 0.3s;
+}
+.partnerLogo:hover {
+    background-color: #a3a3a3;
+}
+.partnerLogo:hover .accImg {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.3s;
+}
+
+.animationCard {
+    position: relative;
+}
+.animationCard::before { /*var(--mouse-x) var(--mouse-y)*/
+    background: radial-gradient(800px circle at  var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.05), transparent 40%);
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+    transition: ease all 0.5s;
+}
+.animationCard:hover::before {
+    opacity: 1;
 }
 @media only screen and (max-width: 1060px) {
-    .margins {
+    .ecosystem {
         width: 800px;
     }
     .speakerBox {
         width: 33%;
     }
-    .headerTitle {
-        width: 600px;
-    }
     .num {
         font-size: 100px;
     }
+    .partnerLogo {
+        width: 31%;
+    }
 }
 @media only screen and (max-width: 810px) {
-    .margins {
-        width: 600px;
-        flex-wrap: wrap;
+    .ecosystem {
+        width: 400px;
+    }
+    .column800 {
+        flex-direction: column;
     }
     .numCol {
-        width: 50%;
+        width: 100%;
+    }
+    .numText {
+        margin-bottom: 50px;
     }
     .whiteText {
         margin: 0;
@@ -274,28 +388,30 @@ body > footer a {
     }
     .third {
         width: 100%;
+        height: 160px;
     }
     .header {
         padding: 50px;
     }
     .headerTitle {
-        width: 450px;
         font-size: 60px;
         line-height: 60px;
     }
     .speakerBox {
         width: 50%;
     }
+    .partnerLogo {
+        width: 47%;
+    }
 }
 @media only screen and (max-width: 510px) {
-    .margins {
+    .ecosystem {
         width: 400px;
     }
     .header {
         padding: 50px;
     }
     .headerTitle {
-        width: 300px;
         font-size: 40px;
         line-height: 40px;
     }
@@ -309,9 +425,6 @@ body > footer a {
         width: 300px;
         height: 300px;
     }
-    .numCol {
-        width: 100%;
-    }
     .mRow {
         flex-direction: column;
     }
@@ -321,13 +434,19 @@ body > footer a {
     .speakerBox {
         width: 100%;
     }
+    .partnerLogo {
+        width: 100%;
+    }
+    .logoTitle {
+        height: 60px;
+        width: 193px;
+    }
 }
 @media only screen and (max-width: 320px) {
-    .margins {
+    .ecosystem {
         width: 300px;
     }
     .headerTitle {
-        width: 250px;
         font-size: 30px;
         line-height: 30px;
     }
