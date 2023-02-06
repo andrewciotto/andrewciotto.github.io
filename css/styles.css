@@ -71,6 +71,7 @@ body > footer a {
 .callButton {
     background-color: #721cff; /*0043FF*/
     /* border: 5px solid #0043FF; */
+    font-weight: bold;
     border-radius: 50px;
     margin: 5px;
     color: white;
