@@ -1,3 +1,26 @@
+window.addEventListener("scroll", reveal);
+
+// To check the scroll position on page load
+reveal(".num");
+
+
+// let valueDisplays = document.querySelectorAll(".num");
+// let interval = 4000;
+// valueDisplays.forEach((valueDisplay) => {
+//   let startValue = 0;
+//   let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+//   let duration = Math.floor(interval / endValue);
+//   let counter = setInterval(function () {
+//     startValue += 1;
+//     valueDisplay.textContent = startValue;
+//     if (startValue == endValue) {
+//       clearInterval(counter);
+//     }
+//   }, duration);
+// });
+
+
+
 const handleOnMouseMove = e => {
     const { currentTarget: target } = e;
 
@@ -14,18 +37,16 @@ for(const card of document.querySelectorAll(".animationCard")) {
     card.onmousemove = e => handleOnMouseMove(e);
 }
 
-// const button = document.querySelector(".animationCard");
-
-// const readout = document.querySelector("p");
-
-// button.addEventListener("mousemove", (e) => {
-//   const { x, y } = button.getBoundingClientRect();
-
-//   readout.innerText = `
-//   mouse X: ${e.clientX} mouse Y: ${e.clientY}
-  
-//   left edge: ${parseInt(x)} top edge: ${parseInt(y)}
-  
-//   shiny X: ${e.clientX - parseInt(x)} shiny Y: ${e.clientY - parseInt(y)}
-//   `;
-// });
+function reveal(element) {
+    var reveals = document.querySelectorAll(element);
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
