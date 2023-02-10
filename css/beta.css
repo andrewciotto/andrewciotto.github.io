@@ -147,7 +147,7 @@ body > footer a {
   
   width: 100%; 
   border-color: #000 transparent transparent transparent;
-  border-radius: 50%/100px 100px 0 0;
+  border-radius: 50%/40px 40px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,18 +160,23 @@ body > footer a {
   width: 1000px;
   /* margin: auto; */
 }
+.numCol {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 40px;
+}
 .num {
  font-family: robotoBlack;
  font-size: 140px; 
  line-height: 100px;
  text-align: center;
- color: white;
+ color: #721cff;
 }
 .numText {
   text-align: center;
   font-size: 30px;
   font-family: robotoBlack;
-  color: white;
+  color: #721cff;
 }
 .pageMargins {
   width: 1000px;
@@ -219,10 +224,11 @@ body > footer a {
   padding: 80px 100px 0 100px;
 }
 .blueTitle {
-  font-size: 50px;
-  color: black;
+  font-size: 30px;
+  color: #721cff;
   line-height: 50px;
-  font-family: robotoBlack;
+  font-family: abel;
+  font-weight: bolder;
   text-align: left;
   margin: 20px 0;
 }
