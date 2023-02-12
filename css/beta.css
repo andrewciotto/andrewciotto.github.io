@@ -139,7 +139,7 @@ body > footer a {
   align-items: center;
 }
 .mainPage {
-  background-image: linear-gradient(180deg, #161b23, #f2ecfb 1000px);
+  background-image: linear-gradient(180deg, #161b23, #f2ecfb 500px);
   /* background-color: #161b23; */
   margin-top: 70vh;
   position: relative;
@@ -164,6 +164,7 @@ body > footer a {
   background: white;
   border-radius: 20px;
   padding: 30px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .num {
  font-family: robotoBlack;

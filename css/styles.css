@@ -42,6 +42,100 @@ body > footer a {
 .flexWrap {
     flex-wrap: wrap;
 }
+#bar1, #bar2, #bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+#bar1.change {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+#bar2.change {opacity: 0;}
+
+#bar3.change {
+    transform: translate(0, -11px) rotate(45deg);
+}
+#hidingBox {
+    height: 200px;
+    top: -200px;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    background-color: black;
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 60px;
+    width: 100vw;
+    z-index: 0;
+    top: 0;
+    background-color: black;
+    transform: translateY(-60px);
+    transition: all ease 0.5s;
+}
+#navbar.scrolled {
+    z-index: 3;
+    transform: translateY(0);
+    /* display: flex; */
+}
+#navbar.hidden {
+    display: none !important;
+}
+#navExpand {
+    display: none;
+}
+.navform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    z-index: 3;
+    top: 0;
+    background-color: black;
+    transition: all ease 0.5s;
+}
+.smallLogo {
+    color: white;
+    height: 50px;
+    width: 161px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    margin-left: 20px;
+}
+.smallLogo:hover {
+    transform: scale(1.05);
+}
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navLink {
+    color: white;
+    border: white thin solid;
+    border-radius: 50px;
+    margin: 0 5px;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.navLink:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
 .third {
     width: 33%;
     /* background-image: linear-gradient(180deg, #c8c8c8, #bcbcbc); */
@@ -402,6 +496,10 @@ body > footer a {
 @media only screen and (max-width: 810px) {
     .mainPage {
         background-image: linear-gradient(180deg, #161b23, #f2ecfb 1800px);
+        margin-top: 60vh;
+    }
+    .secondHeader {
+        height: 40vh;
     }
     .emptySpace {
         height: 100px;
@@ -507,6 +605,56 @@ body > footer a {
         display: flex;
         flex-direction: column;
         height: 70px;
+    }
+    #navbar {
+        flex-direction: column;
+        height: 70px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* transform: translateY(-240px); */
+        /* display: none; */
+    }
+    #navExpand {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        color: white;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .navLinks {
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        transform: translateY(-240px);
+        background-color: black;
+        transition: all ease 0.5s;
+    }
+    .navLinks.expanded {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        transform: translateY(0px);
+    }
+    .navLink {
+        color: white;
+        border: none;
+        border-top: white thin solid;
+        border-radius: 0px;
+        margin: 0;
+        padding: 30px;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        cursor: pointer;
+        transition: all ease 0.5s;
+    }
+    .smallLogo {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 @media only screen and (max-width: 400px) {
