@@ -55,13 +55,15 @@ const myNav = document.getElementById('navbar')
 const navEx = document.getElementById('navLinksEx')
 
 window.onscroll = function() {
+  navEx.classList.remove('expanded');
+  navEx.classList.remove("change");
+  isExpanded = false;
   if(window.scrollY > window.innerHeight){
     myNav.classList.add('scrolled')
     // myNav.classList.remove('hidden');
     // delay(501).then(() => myNav.classList.add('scrolled'));
   }else{
     myNav.classList.remove('scrolled');
-    navEx.classList.remove('expanded');
     // delay(501).then(() => myNav.classList.add('hidden'));
   }
 }

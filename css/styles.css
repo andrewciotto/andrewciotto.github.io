@@ -93,6 +93,9 @@ body > footer a {
 #navExpand {
     display: none;
 }
+#clickAway {
+    display: none;
+}
 .navform {
     display: flex;
     flex-direction: row;
