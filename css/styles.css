@@ -617,7 +617,7 @@ body > footer a {
         /* transform: translateY(-240px); */
         /* display: none; */
     }
-    #navExpand {
+    #navExpand { 
         display: flex;
         position: absolute;
         right: 30px;
