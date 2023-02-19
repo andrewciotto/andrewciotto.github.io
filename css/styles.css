@@ -392,7 +392,7 @@
   .greyText {
     color: black; /*191919*/
     font-size: 20px;
-    height: 80px;
+    height: 70px;
     text-align: center;
   }
   .stepsBox {
@@ -440,7 +440,8 @@
     color: white;
   }
   .speakerImg {
-    width: 80%;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     /* -webkit-filter: grayscale(100%);
@@ -572,6 +573,9 @@
     .stepsBox {
       width: 500px;
     }
+    .speakerTitle {
+        font-size: 30px;
+    }
   }
   @media only screen and (max-width: 810px) {
     .mainPage {
@@ -633,6 +637,9 @@
     /* .aroundPartner {
         width: 100%;
     } */
+    .speakerTitle {
+        font-size: 30px;
+    }
   }
   @media only screen and (max-width: 510px) {
     .pageMargins {
