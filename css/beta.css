@@ -414,6 +414,10 @@ body > footer a {
   align-items: center;
   justify-content: center;
 }
+.infoImg {
+  height: 300px;
+  width: 300px;
+}
 .imgPlaceholder {
   height: 400px;
   width: 400px;
@@ -493,15 +497,16 @@ body > footer a {
 }
 .partnerLogo {
   width: 100%;
-  background-color: #DCC6FF;
+  background-color: white;
   height: 100px;
   align-items: center;
   justify-content: center;
+  border: thin solid lightgray;
   border-radius: 10px;
   transition: all ease-in-out 0.3s;
 }
 .partnerLogo:hover {
-  background-color: #CAAAFF;
+  background-color: #d4d4d4;
 }
 .partnerLogo:hover .accImg {
   transform: scale(1.1);
@@ -527,6 +532,16 @@ body > footer a {
 .animationCard:hover::before {
   opacity: 1;
 }
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 @media only screen and (max-width: 1060px) {
   .pageMargins {
       width: 800px;
@@ -549,6 +564,10 @@ body > footer a {
   .backgroundImg {
     width: 300px;
     height: 300px;
+  }
+  .infoImg {
+    height: 250px;
+    width: 250px;
   }
   .stepsBox {
     width: 500px;
@@ -751,5 +770,9 @@ body > footer a {
   .backgroundImg {
     width: 250px;
     height: 250px;
+  }
+  .infoImg {
+    height: 200px;
+    width: 200px;
   }
 }
