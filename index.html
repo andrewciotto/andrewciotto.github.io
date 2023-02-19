@@ -4,7 +4,7 @@
 	<title>Moonarch</title>
 	<!-- Add Fav Icon -->
 	<!-- Main purple color: #431984 --->
-	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/beta.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Aqulia Capital is building infrastructure for early stage investing"> <!-- Google Search Description -->
@@ -24,157 +24,180 @@
       <a href="./angel-form.html" class="navLink">Angel sign up</a>
       <a href="./startup-form.html" class="navLink">Founder sign up</a>
     </div>
+    <!-- <div id="navExpand" onclick="expandNav()">x</div> -->
     <div id="navExpand" onclick="expandNav()">
       <div id="bar1"></div>
       <div id="bar2"></div>
       <div id="bar3"></div>
     </div>
   </div>
-
 	<!-- Main header view -->
 	<div class="header">
-      <a href="./index.html"><img class="logoTitle" src="./assets/logoText-white.png" /></a>
+      <a href="https://andrewciotto.github.io"><img class="logoTitle" src="./assets/logoText-white.png" /></a>
   		<p class="headerTitle">
   			Connect with the builders of tomorrow
   		</p> 
-  		<!-- <p><a class="btn btn-lg btn-primary" href="https://airtable.com/shrfqlOcjWEELc8uG" target="_blank" style="background: #5800FF">Apply now</a></p> -->
 	</div>
   <div class="mainPage">
     <div class="secondHeader">
       <a href="./angel-form.html" class="callButton centerButton">SIGN UP</a>
     </div>
-
-    <div class="ecosystem">
-      <div class="whiteTitle">
-        Our Network
-      </div>
-      <div class="flexRow spaceBetween column800">
-        <div class="flexColumn numCol">
-          <div class="num">20<span class="num" style="font-size: 80px">+</span></div>
-          <div class="numText">accelerators</div>
+    <div class="ecosystemBackground" id="shrinkingBox">
+      <div class="ecosystem">
+        <div class="whiteTitle">
+          Our Network
         </div>
-        <div class="flexColumn numCol">
-          <div class="num">400<span class="num" style="font-size: 80px">+</span></div>
-          <div class="numText">companies</div>
-        </div>
-        <div class="flexColumn numCol">
-          <div class="num">20<span class="num" style="font-size: 80px">+</span></div>
-          <div class="numText">angels</div>
-        </div>
-        <div class="flexColumn numCol">
-          <div class="num">6<span class="num" style="font-size: 80px"></span></div>
-          <div class="numText">speakers</div>
+        <div class="flexRow spaceBetween column800">
+          <div class="flexColumn numCol">
+            <div class="num">20<span class="num" style="font-size: 80px">+</span></div>
+            <div class="numText">accelerators</div>
+          </div>
+          <div class="flexColumn numCol">
+            <div class="num">25<span class="num" style="font-size: 80px">+</span></div>
+            <div class="numText">angels</div>
+          </div>
+          <div class="flexColumn numCol">
+            <div class="num">400<span class="num" style="font-size: 80px">+</span></div>
+            <div class="numText">companies</div>
+          </div>
+          <!-- <div class="flexColumn numCol">
+            <div class="num">5<span class="num" style="font-size: 80px"></span></div>
+            <div class="numText">speakers</div>
+          </div> -->
         </div>
       </div>
     </div>
 
     <div class="wrapGrid pageMargins">
       <div class="emptySpace"></div>
+      <div class="whiteTitle" style="color: #721cff">
+        Our Startup Funnel
+      </div>
       <div class="flexRow spaceBetween textCol">  <!--  class="blackBox animationCard" -->
-        <div class="flexColumn">
-          <div class="blueTitle">
-            Access the Future
+        <div class="flexColumn flexCenter reveal">
+          <div class="backgroundImg">
+            <img class="infoImg" src="./assets/startupSelection.png" />
           </div>
-          <div class="whiteText">We provide a centralized and easily accessible platform for you to discover and research promising early-stage companies. By using our database, angel investors can quickly filter and search through a large pool of startups, helping them to identify the best investment opportunities based on their criteria. Join our community today and access an ecosystem of hundreds of startups backed by the best accelerators and incubators across the world.</div>
         </div>
-        <div class="flexColumn">
-          <!-- <div class="imgPlaceholder">
-            <img class="landscapeImg" src="./assets/blueRocketLaunch.png" />
-          </div> -->
+        <div class="flexColumn stepsBox reveal">
+          <div class="flexRow imageTitle">
+            <div class="blueTitle">
+              STEP ONE
+            </div>
+          </div>
+          <div class="blackTitle">Startup Selection</div>
+          <div class="whiteText">We select the best startups in North America through partnerships with accelerators and founder networks</div>
+          <a href="./angel-form.html" class="callButton buttonMargin">SIGN UP</a>
         </div>
       </div>
-      <!-- <div class="emptySpace"></div> -->
-      <div class="flexColumn third animationCard">
-        <img height="50" width="50" src="./assets/world.png" />
-        <div class="whiteText">Discover hundreds of startups world-wide</div>
-      </div>
-      <div class="flexColumn third animationCard">
-        <img height="50" width="50" src="./assets/fast.png" />
-        <div class="whiteText">Quickly find startups that fits your interests</div>
-      </div>
-      <div class="flexColumn third animationCard">
-        <img height="50" width="50" src="./assets/database.png" />
-        <div class="whiteText">Unlimited access to our extensive database</div>
-      </div>
-      <a href="./angel-form.html" class="callButton buttonMargin">SIGN UP</a>
 
-      <div class="emptySpace"></div>
-      <div class="flexRow spaceBetween textCol"> <!-- blackBox animationCard -->
-        <div class="flexColumn">
-          <!-- <div class="imgPlaceholder">
-            <img class="landscapeImg" src="./assets/landscape1.jpeg" 1>
-          </div> -->
-        </div>
-        <div class="flexColumn">
-          <div class="blueTitle">
-            Discover a Thriving Community
+      <div class="emptySpace">
+        <img height="100" width="100" class="arrow" src="./assets/arrow1.png" style="transform: translateX(-30px);"  />
+      </div>
+
+      <div class="flexRow spaceBetween textCol reverseRow">  <!--  class="blackBox animationCard" -->
+        <div class="flexColumn stepsBox reveal">
+          <div class="flexRow imageTitle">
+            <!-- <img height="20" width="20" src="./assets/world.png" /> -->
+            <div class="blueTitle">
+              STEP TWO
+            </div>
           </div>
-          <div class="whiteText">Invest among a community of the best angels and mentors in North America. We strive to foster connections between founders and investors to develop the startups of tomorrow. We also offer speaker events that can help you make informed investment decisions and find the right startups for you. 
+          <div class="blackTitle">AI Analysis</div>
+          <div class="whiteText">We screen each startup through our in-house AI model</div>
+          <a href="./angel-form.html" class="callButton buttonMargin">SIGN UP</a>
+        </div>
+        <div class="flexColumn flexCenter reveal">
+          <div class="backgroundImg">
+            <img class="infoImg" src="./assets/aiAnalysis.png" />
           </div>
         </div>
       </div>
-      <div class="flexColumn third animationCard">
-        <img height="50" width="50" src="./assets/group.png" />
-        <div class="whiteText">Invest among angels and experts</div>
-      </div>
-      <div class="flexColumn third animationCard">
-        <img height="50" width="50" src="./assets/fireplace.png" />
-        <div class="whiteText">Get warm intros with startup founders</div>
-      </div>
-      <div class="flexColumn third animationCard">
-        <img height="50" width="50" src="./assets/verified.png" />
-        <div class="whiteText">Events with world-class speakers and mentors</div>
-      </div>
-      <a href="./angel-form.html" class="callButton buttonMargin">SIGN UP</a>
 
-    </div>
+      <div class="emptySpace">
+        <img height="100" width="150" class="arrow" src="./assets/arrow2.png" style="transform: translateX(-30px) rotate(5deg);"  />
+      </div>
 
-    <!-- <div class="emptySpace"></div> -->
-    <div class="wrapList pageMargins">
-      <!-- <div>
-        <div class="blueTitle">
-          No Sleep for Founders
+      <div class="flexRow spaceBetween textCol">  <!--  class="blackBox animationCard" -->
+        <div class="flexColumn flexCenter reveal">
+          <div class="backgroundImg">
+            <img class="infoImg" src="./assets/dataRoom.png" />
+          </div>
         </div>
-        <div class="whiteText">The economy may be slowing but innovation isn't: no matter what happens, founders will continue to innovate and transform the world. Agile and innovative startups often easily adapt to changing market conditions and continue finding new opportunities for growth. Recessions can even provide new opportunities for startups as established companies struggle and consumers look for more affordable alternatives. Founders need your funding more now than ever to continue innovating and pushing their startups to become the next big thing.</div>
-      </div>     -->
-      <!-- whiteBox -->
+        <div class="flexColumn stepsBox reveal">
+          <div class="flexRow imageTitle">
+            <!-- <img height="20" width="20" src="./assets/world.png" /> -->
+            <div class="blueTitle">
+              STEP THREE
+            </div>
+          </div>
+          <div class="blackTitle">Your Data Room</div>
+          <div class="whiteText">Get unlimited access to your data room with custom features</div>
+          <a href="./angel-form.html" class="callButton buttonMargin">SIGN UP</a>
+        </div>
+      </div>
+
+      <div class="emptySpace">
+        <img height="50" width="100" class="arrow" src="./assets/arrow3.png"  />
+      </div>
+
+      <div class="flexRow spaceBetween textCol reverseRow">  <!--  class="blackBox animationCard" -->
+        <div class="flexColumn stepsBox reveal">
+          <div class="flexRow imageTitle">
+            <!-- <img height="20" width="20" 2src="./assets/world.png" /> -->
+            <div class="blueTitle">
+              STEP FOUR
+            </div>
+          </div>
+          <div class="blackTitle">Warm Introductions</div>
+          <div class="whiteText">We will provide warm introductions to any startup founder that caught your attention</div>
+          <a href="./angel-form.html" class="callButton buttonMargin">SIGN UP</a>
+        </div>
+        <div class="flexColumn flexCenter reveal">
+          <div class="backgroundImg">
+            <img class="infoImg" src="./assets/warmIntros.png" />
+          </div>
+        </div>
+      </div>
+
       <div class="emptySpace"></div>
       <div class=""> 
-        <div class="blueTitle">
-          Our Speakers
+        <div class="whiteTitle" style="color: #721cff">
+          Our Events
         </div>
+        <div class="whiteText">Meet exited-unicorn founders, MPs at prominent funds who will speak on how to foster an investment thesis, diligence strategies & much more!</div>
         <div class="flexRow flexCenter flexWrap">
-          <div class="flexColumn flexCenter speakerBox">
+          <div class="flexColumn flexCenter speakerBox reveal">
             <div class="speakerImg"><img class="croppedImg" src="./assets/alex.jpeg" /></div>
             <div class="blackTitle">Alex Normon</div>
             <div class="greyText">N49P Partner, AngelList Canada</div>
             <a href="https://www.linkedin.com/in/alexanderlnorman/" target="_blank" class="callButton shortButton">About</a>
           </div>
-          <div class="flexColumn flexCenter speakerBox">
+          <div class="flexColumn flexCenter speakerBox reveal">
             <div class="speakerImg"><img class="croppedImg" src="./assets/jeff.jpeg" /></div>
             <div class="blackTitle">Jeff Hoffman</div>
             <div class="greyText">Investor, Philanthropist</div>
             <a href="https://www.linkedin.com/in/jeffhoff/" target="_blank" class="callButton shortButton">About</a>
           </div>
-          <div class="flexColumn flexCenter speakerBox">
+          <div class="flexColumn flexCenter speakerBox reveal">
             <div class="speakerImg"><img class="croppedImg" src="./assets/andre.jpeg" /></div>
             <div class="blackTitle">Andre Charoo</div>
             <div class="greyText">Maple GP & Inovia Venture Partner</div>
             <a href="https://www.linkedin.com/in/acharoo/" target="_blank" class="callButton shortButton">About</a>
           </div>
-          <div class="flexColumn flexCenter speakerBox">
+          <div class="flexColumn flexCenter speakerBox reveal">
             <div class="speakerImg"><img class="croppedImg" src="./assets/geri.jpeg" /></div>
             <div class="blackTitle">Geri Kirilova</div>
             <div class="greyText">Laconia MP</div>
-            <a href="https://www.linkedin.com/in/acharoo/" target="_blank" class="callButton shortButton">About</a>
+            <a href="https://www.linkedin.com/in/gerikirilova/" target="_blank" class="callButton shortButton">About</a>
           </div>
-          <div class="flexColumn flexCenter speakerBox">
+          <div class="flexColumn flexCenter speakerBox reveal">
             <div class="speakerImg"><img class="croppedImg" src="./assets/frederik.jpeg" /></div>
             <div class="blackTitle">Frederik Groce</div>
             <div class="greyText">Wellington VC & BLCK VC Co-founder</div>
             <a href="https://www.linkedin.com/in/frederikgroce/" target="_blank" class="callButton shortButton">About</a>
           </div>
-          <div class="flexColumn flexCenter speakerBox">
+          <div class="flexColumn flexCenter speakerBox reveal">
             <div class="speakerImg"><img class="croppedImg" src="./assets/derrick.jpeg" /></div>
             <div class="blackTitle">Derrick Raphael</div>
             <div class="greyText">CEO, Founder</div>
@@ -184,10 +207,10 @@
       </div>
       <div class="emptySpace"></div>
       <div class="">
-        <div class="blueTitle">
+        <div class="whiteTitle" style="color: #721cff">
           Accelerators
         </div>
-        <div class="flexRow flexCenter flexWrap">
+        <div class="flexRow flexCenter flexWrap reveal">
           <div class="aroundPartner">
             <div class="flexColumn partnerLogo">
               <a href="https://fintechcadence.com" target="_blank" class="imageLink"><img class="accImg" src="assets/acceleratorLogo/fintechCadence.png" /></a>
