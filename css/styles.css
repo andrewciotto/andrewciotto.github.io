@@ -195,6 +195,20 @@
     letter-spacing: -5px;
     text-align: center;
   }
+  .disclaimer {
+    font-size: 11px;
+    color: gray;
+    transform: translateY(50%);
+    width: 500px;
+  }
+  .accCallButton {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
   .callButton {
     background-color: #721cff; /*0043FF*/
     /* border: 5px solid #0043FF; */
@@ -568,11 +582,14 @@
       width: 400px;
       height: 400px;
     }
+    .disclaimer {
+      width: 400px;
+    }
     .infoImg {
       height: 350px;
       width: 350px;
     }
-    .stepsBox {
+    .stepsBox .disclaimer {
       width: 400px;
     }
     .speakerTitle {
@@ -765,6 +782,9 @@
       width: 300px;
       height: 300px;
     }
+    .disclaimer {
+      width: 300px;
+    }
     .infoImg {
       height: 250px;
       width: 250px;
@@ -775,6 +795,7 @@
     .stepsBox {
         width: 300px;
         padding: 0;
+        padding-top: 30px;
     }
   }
   @media only screen and (max-width: 400px) {
@@ -799,10 +820,14 @@
     }
     .stepsBox {
       padding: 5px;
+      padding-top: 30px;
     }
     .backgroundImg {
       width: 250px;
       height: 250px;
+    }
+    .disclaimer {
+      width: 250px;
     }
     .infoImg {
       height: 200px;
