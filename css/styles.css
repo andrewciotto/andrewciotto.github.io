@@ -133,6 +133,13 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  .indexLinks {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
   .navLink {
     color: white;
     border: white thin solid;
@@ -195,6 +202,13 @@
     letter-spacing: -5px;
     text-align: center;
   }
+  .headerSubTitle {
+    font-size: 50px;
+    color: #FFFFFF;
+    font-family: dmBold;
+    letter-spacing: -3px;
+    width: 150px;
+  }
   .disclaimer {
     font-size: 11px;
     color: gray;
@@ -255,6 +269,7 @@
   .logoTitle:hover {
     transform: scale(1.05);
   }
+
   .secondHeader {
     height: 30vh;
     width: 100%;
@@ -263,6 +278,18 @@
     justify-content: center;
     /* border-radius: 50%/40px 40px 0 0; */
     align-items: center;
+  }
+  .secondHeaderIndex {
+    top: 70vh;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    background-color: #161b23;
+    justify-content: center;
+    border-radius: 50%/40px 40px 0 0;
+    align-items: center;
+    position: relative;
+    z-index: 1;
   }
   .mainPage {
     /* background-image: linear-gradient(180deg, #161b23, #f2ecfb 500px); */
@@ -476,12 +503,30 @@
     width: 33%;
     margin: 40px 0 0 0;
   }
+  .indexFooter {
+    align-items: center;
+    color: white;
+    background-color: #161b23;
+    width: 100%;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+    top: 70vh;
+    transform: translateY(-1px);
+  }
+  .footerBox {
+    width: 600px;
+  }
+  .footerTitle {
+    font-weight: bold;
+    color: darkgray;
+  }
   .footer {
     align-items: center;
     color: white;
-    height: 50px;
-    background: black;
-    padding: 0 50px;
+    background-color: black;
+    width: 100%;
+    padding: 50px;
     position: relative;
     z-index: 1;
   }
@@ -668,8 +713,30 @@
     .infoMargin {
         width: 500px;
     }
+    .hideIndex {
+      display: none;
+    }
+    .secondHeaderIndex {
+      flex-direction: column;
+      text-align: center;
+    }
+    .halfScreen {
+      width: 150px;
+    }
+    .footerCol {
+      width: 30%;
+      padding: 10px;
+    }
+    .footerBox {
+      flex-wrap: wrap;
+      width: 100vw;
+      padding: 10px;
+    }
   }
   @media only screen and (max-width: 510px) {
+    .footerCol {
+      width: 50%;
+    }
     .pageMargins {
         width: 90%;
     }
