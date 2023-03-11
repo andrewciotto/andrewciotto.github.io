@@ -29,6 +29,11 @@
     scroll-behavior:smooth !important;
   }
   
+  #startupForm {
+    width: 100%;
+    height: calc(100vh - 60px) !important;
+  }
+
   .flexRow {
     display: flex;
     flex-direction: row;
