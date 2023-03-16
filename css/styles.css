@@ -710,6 +710,9 @@
         font-size: 60px;
         line-height: 60px;
     }
+    .minimize {
+      font-size: 30px;
+    }
     .speakerBox {
         width: 50%;
     }
@@ -891,6 +894,9 @@
     .headerTitle {
         font-size: 30px;
         line-height: 30px;
+    }
+    .minimize {
+      font-size: 20px;
     }
     .imgPlaceholder {
         width: 250px;
