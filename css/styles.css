@@ -749,6 +749,13 @@
     }
   }
   @media only screen and (max-width: 510px) {
+    .makeCol {
+      display: flex;
+      flex-direction: column;
+    }
+    .addTop {
+      margin-top: 50px;
+    }
     .footerCol {
       width: 50%;
     }
