@@ -147,7 +147,10 @@
   }
   .navLink {
     color: white;
-    border: white thin solid;
+    /* border: white thin solid; */
+    background-color: #721cff;
+    color: white;
+    transition: all 0.3s ease;
     border-radius: 50px;
     margin: 0 5px;
     padding: 10px 30px;
@@ -157,8 +160,17 @@
   }
   .navLink:hover {
     text-decoration: none;
-    color: black;
-    background-color: white;
+    /* color: black;
+    background-color: white; */
+    color: white;
+    background-color: transparent;
+    -webkit-box-shadow:inset 0px 0px 0px 5px #721cff;
+    -moz-box-shadow:inset 0px 0px 0px 5px #721cff;
+    box-shadow:inset 0px 0px 0px 5px #721cff;
+    background-color: #721cff4b;
+  }
+  .navLink:active {
+    background-color: #731cff6e;
   }
   .third {
     width: 33%;
@@ -852,7 +864,9 @@
     .navLink {
         color: white;
         border: none;
+        background-color: #000;
         border-top: white thin solid;
+        /* background: #721cff; */
         border-radius: 0px;
         margin: 0;
         padding: 30px;
