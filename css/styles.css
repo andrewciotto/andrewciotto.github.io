@@ -41,8 +41,11 @@
     flex-wrap: wrap;
   }
   .header {
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     padding: 0px 100px 100px 100px;
     background-color: #000000; /*03001C*/
     display: flex;
@@ -83,7 +86,7 @@
   }
   .column800 {
     position: absolute;
-    bottom: 70px;
+    bottom: 20px;
     left: 0;
     right: 0;
     width: 100%;
