@@ -68,17 +68,18 @@
     background-position: center; 
     cursor: pointer;
     margin: 5px;
+    transition: all ease-in-out 0.2s;
   }
   .calendlyContact {
     background-image: url("../assets/calendly.png");
   }
-  .calendlyContact:hover {
+  .calendlyContact:hover, .calendlyContact:active {
     background-image: url("../assets/calendlyHover.png");
   }
   .linkedinContact {
     background-image: url("../assets/linkedin.png");
   }
-  .linkedinContact:hover {
+  .linkedinContact:hover, .linkedinContact:active {
     background-image: url("../assets/linkedinHover.png");
   }
   .logoTitleMain {
