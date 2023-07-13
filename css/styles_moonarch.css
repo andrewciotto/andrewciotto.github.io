@@ -1,0 +1,91 @@
+/*
+main purple = 721CFF
+hover purple = 914dff
+*/
+
+
+/* Main action btn */
+.btn-custom:hover {
+  background-color: #914dff !important;
+  border-color: #914dff !important;
+  color: #FFFFFF!important;
+}
+
+
+/* Nav bar links */
+.nav-link {
+	position: relative !important;
+}
+
+.nav-link:hover {
+	color: #914dff !important;
+}
+
+.nav-link::after {
+	opacity: 0 !important;
+	transition: all 0.2s !important;
+}
+
+.nav-link:hover::after {
+	content: '' !important;
+	opacity: 0.7 !important;
+	height: 2px !important;
+	width: 100% !important;
+	background-color: #914dff !important;
+	position: absolute !important;
+	bottom: 0 !important;
+	left: 0 !important;
+}
+
+
+ /* IMG scroller */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 40s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
