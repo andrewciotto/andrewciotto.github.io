@@ -7,47 +7,44 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./index.js"></script>
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Moonarch | Connect with the startups of tomorrow</title>
+	<title>Moonarch | Fund your startup</title>
 	<link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 </head>
 <body>
 
 	<!-- Navbar -->
-	<div class="container">
-		<header class="d-flex flex-wrap justify-content-center py-3">
-	      <a href="https://moonarch.io/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-	        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-	        <span class="fs-4">
-	        	<img src="./assets/MoonarchMainLogo.png" class="mb-3" alt="Moonarch" height="45px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	        </span>
-	      </a>
+	<!-- d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none -->
+	  <a href="https://moonarch.io/" class="" style="margin-top: 10px; margin-left: 10px; z-index: 5">
+		<img src="./assets/MoonarchMainLogo.png" alt="Moonarch" height="45px">
+	  </a>
 
-	      <ul class="nav nav-pills">
-	      	<!-- -->
-	      </ul>
-	    </header>
-  	</div>
-
-
+	  <button type="button" class="blueButton fixedNav" href="moonarch.io/form" target="_blank">
+		<span class="blueButtonInner" style="width: 120px">
+			<span>Apply now</span>
+			<span class="arrows">
+				<img src="./assets/icon/arrowBack.png" height="2" width="30"/>
+				<img src="./assets/icon/arrow.png" class="arrowIcon"/>
+			</span>
+		</span>
+	</button>
 
   	<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body">
 	    <div class="col-md-6 mx-auto">
-	      <h1 class="display-3 mb-3 fw-bold">Raise from top venture investors</h1>
+			<!-- <img src="./assets/icon/newLogoBlue.png" height="50" width="60" style="margin-bottom: 30px"/> -->
+	      <h1 class="display-3 mb-3 fw-bold">Find investors for your startup</h1>
 	      <h3 class="fw-normal text-muted mb-3">No cuts or fees taken from Moonarch</h4>
 	      <div class="d-flex gap-3 pt-5 justify-content-center lead fw-normal">
-	        <a class="icon-link" href="https://moonarch.io/form" style="color: #721CFF; text-decoration: none;">
-	          
-	          <button type="button" class="btn btn-custom btn-lg px-4 me-md-2 mb-2" style="
-		          	border-color: #721CFF;
-					border-width: 3px;
-					background-color: #721CFF;
-					color: #FFFFFF;
-					border-radius: 10px;
-					width: 335px;
-					height: 50px;
-				">
-					Add my startup &nbsp;<i class="fa fa-sm fa-arrow-right"></i>
+	        <a class="icon-link" href="https://moonarch.io/form" target="_blank" style="color: #721CFF; text-decoration: none;">
+	          <button type="button" class="blueButton bigBlue">
+					<span class="blueButtonInner">
+						<span>Find investors</span>
+						<span class="arrows">
+							<img src="./assets/icon/arrowBack.png" height="2" width="30"/>
+							<img src="./assets/icon/arrow.png" class="arrowIcon"/>
+						</span>
+					</span>
 				</button>
 	        </a>
 	      </div>
@@ -59,16 +56,14 @@
 
 
   	<div class="container px-5 py-5 text-center" id="stats">
-
 		<div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
-			
 			<div class="feature col">
 			    <div class="card-body">
-	              <h1 class="card-title pricing-card-title" style="color: #721CFF;">
+	              <h1 class="card-title pricing-card-title" style="color: #ffffff;">
 	              	50
 	              </h1>
-	              <ul class="list-unstyled mt-3">
-	                <li style="color: #454545">
+	              <ul class="list-unstyled mt-3 alignL">
+	                <li style="color: #ffffff">
 	                	accelerators
 	                </li>
 	              </ul>
@@ -77,24 +72,11 @@
 
 			<div class="feature col">
 			    <div class="card-body">
-	              <h1 class="card-title pricing-card-title" style="color: #721CFF;">
-	              	80+
+	              <h1 class="card-title pricing-card-title" style="color: #ffffff;">
+	              	1,500<span style="font-size: 25px">+</span>
 	              </h1>
-	              <ul class="list-unstyled mt-3">
-	                <li style="color: #454545">
-	                	angels
-	                </li>
-	              </ul>
-	            </div>
-			</div>
-
-			<div class="feature col">
-			    <div class="card-body">
-	              <h1 class="card-title pricing-card-title" style="color: #721CFF;">
-	              	1,500+
-	              </h1>
-	              <ul class="list-unstyled mt-3">
-	                <li style="color: #454545">
+	              <ul class="list-unstyled mt-3 alignL">
+	                <li style="color: #ffffff">
 	                	startups
 	                </li>
 	              </ul>
@@ -103,251 +85,203 @@
 
 			<div class="feature col">
 			    <div class="card-body">
-	              <h1 class="card-title pricing-card-title" style="color: #721CFF;">
-	              	10
+	              <h1 class="card-title pricing-card-title" style="color: #ffffff;">
+	              	80<span style="font-size: 25px">+</span>
 	              </h1>
-	              <ul class="list-unstyled mt-3">
-	                <li style="color: #454545">
-	                	VCs
+	              <ul class="list-unstyled mt-3 alignL">
+	                <li style="color: #ffffff">
+	                	angels
 	                </li>
 	              </ul>
 	            </div>
 			</div>
 
-
-
-		</div>
-
-
-
-  	</div>
-
-
-
-
-
-
-  	<br><br><br>
-  	<div class="position-relative overflow-hidden mt-5 p-3 p-md-5 m-md-3 bg-body-tertiary">
-  		<div class="container px-4 py-5" id="steps">
-
-  			<h5 class="pb-2 align-items-center" style="color:#721CFF;">
-  				Next steps:
-  			</h5>
-			<h4 class="align-items-center">
-				Fund your startup in three steps...
-			</h4>
-
-			<div class="container px-4" id="featured-3">
-			    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-			      <div class="feature col">
-			        <h1 class="pt-5">
-						<span class="badge rounded" 
-							style="background-color: #914dff;"
-							>1
-						</span>
-					</h1>
-			        <h3 class="fs-2 pt-3 pb-4 text-body-emphasis">
-			        	Join our network by <br>filling 
-						out our 2 min form
-			        </h3>
-			      </div>
-			      <div class="feature col">
-			      	<h1 class="pt-5">
-						<span class="badge rounded" 
-							style="background-color: #914dff;"
-							>2
-						</span>
-					</h1>
-			        <h3 class="fs-2 pt-3 text-body-emphasis">
-			        	Get showcased to our community of 
-						investors, VCs and advisors
-			        </h3>
-			      </div>
-			      <div class="feature col">
-			      	<h1 class="pt-5">
-						<span class="badge rounded" 
-							style="background-color: #914dff;"
-							>3
-						</span>
-					</h1>
-			        <h3 class="fs-2 pt-3 text-body-emphasis">
-			        	Get direct warm intros with investors
-						interested in joining your round
-			        </h3>
-			      </div>
-			    </div>
-
-			    <br><br>
-			    <center>
-				    <a href="https://moonarch.io/form">
-						<button type="button" class="btn btn-custom btn-lg px-4 me-md-2 mb-5" style="
-					        border-color: #721CFF;
-							border-width: 2px;
-							background-color: #FFFFFF;
-							color: #721CFF;
-							border-radius: 10px;
-							width: 235px;
-							height: 50px;
-						">
-							Apply now &nbsp;<i class="fa fa-sm fa-arrow-right"></i>
-						</button>
-					</a>
-				</center>
-
+			<div class="feature col">
+			    <div class="card-body">
+	              <h1 class="card-title pricing-card-title" style="color: #ffffff;">
+	              	10
+	              </h1>
+	              <ul class="list-unstyled mt-3 alignL">
+	                <li style="color: #ffffff">
+	                	VCs
+	                </li>
+	              </ul>
+	            </div>
 			</div>
 		</div>
   	</div>
 
+	<div class="networkSticky">
+		<div class="overflow-hidden mt-5 p-3 p-md-5 m-md-3 stickyBox" style="height: fit-content">
+			<h2 class="align-items-center" style="padding-bottom: 0">
+			  The Moonarch Network
+		  	</h2>
+	  	</div>
+		<div class="overflow-hidden p-3 p-md-5 m-md-3 greyBox" style="color: #454545;">
+			<h5 class="pb-2 tabTitle" style="color:#721CFF;">
+				INVESTORS & ADVISORS
+			</h5>
+			<div class="greyBoxTitle">Get exposure to top investors and advisors</div>
+			<div class="greyBoxText">The Moonarch community comprises executives from leading tech companies and startups in North America</div>
+			<div class="logos pb-5">
+				<div class="logos-slide">
+					<img src="./assets//bcg.png" height="200px">
+				  <img src="./assets//coinbase.png" height="200px">
+				  <img src="./assets//microsoft.png" height="200px">
+				  <img src="./assets//dialogue.png" height="200px">
+				  <img src="./assets//google.png" height="200px">
+				  <img src="./assets//deloitte.png" height="200px">
+				  <img src="./assets//scale.png" height="200px">
+				  <img src="./assets//wealthsimple.png" height="200px">
+				  <img src="./assets//superhuman.png" height="200px">
+				  <img src="./assets//clearco.png" height="200px">
+				  <img src="./assets//amazon.png" height="200px">
+				  <img src="./assets//hopper.png" height="200px">				
+				</div>
+				<div class="logos-slide">
+					<img src="./assets//bcg.png" height="200px">
+				  <img src="./assets//coinbase.png" height="200px">
+				  <img src="./assets//microsoft.png" height="200px">
+				  <img src="./assets//dialogue.png" height="200px">
+				  <img src="./assets//google.png" height="200px">
+				  <img src="./assets//deloitte.png" height="200px">
+				  <img src="./assets//scale.png" height="200px">
+				  <img src="./assets//wealthsimple.png" height="200px">
+				  <img src="./assets//superhuman.png" height="200px">
+				  <img src="./assets//clearco.png" height="200px">
+				  <img src="./assets//amazon.png" height="200px">
+				  <img src="./assets//hopper.png" height="200px">	
+				</div>
+			</div>
+		</div>
+		<div class="overflow-hidden p-3 p-md-5 m-md-3 greyBox" style="color: #454545; top: 150px">
+			<h5 class="pb-2 tabTitle" style="color:#721CFF;">
+				RAISE MONEY
+			</h5>
+			<div class="greyBoxTitle">Raise $1M rounds</div>
+			<span class="greyBoxText">On average, startups in our network raise between $500k and $1M rounds from top venture firms, angel investors and funds. A total of $20M is raised by Moonarch startups each month in $5k to $500k cheques.</span>
+		</div>
+		<div class="overflow-hidden p-3 p-md-5 m-md-3 greyBox" style="color: #454545; top: 200px">
+			<h5 class="pb-2 tabTitle" style="color:#721CFF;">
+				FOUNDER COMMUNITY
+			</h5>
+			<div class="greyBoxTitle">Join a community of the most dynamic founders in North America</div>
+			<span class="greyBoxText">A curated community that will help you build your startup.</span>
+		</div>
+		<div class="overflow-hidden p-3 p-md-5 m-md-3 greyBox" style="color: #454545; top: 250px">
+			<h5 class="pb-2 tabTitle" style="color:#721CFF;">
+				STAY UPDATED
+			</h5>
+			<div class="greyBoxTitle">Get frequent updates and insights on the startup world</div>
+			<span class="greyBoxText">Read a weekly newsletter.</span>
+		</div>
+		<div class="overflow-hidden p-3 p-md-5 m-md-3 blueBox">
+			<div class="greyBoxTitle" style="color: white">Join our community today</div>
+			<button type="button" class="blueButton" style="width: 240px" href="moonarch.io/form" target="_blank">
+				<span class="blueButtonInner"style="width: 120px">
+					<span>Apply now</span>
+					<span class="arrows">
+						<img src="./assets/icon/arrowBack.png" height="2" width="30"/>
+						<img src="./assets/icon/arrow.png" class="arrowIcon"/>
+					</span>
+				</span>
+			</button>
+		</div>
+	</div>
+  	<div class="stepBoxes">
+  		<div class="container" id="steps">
+			<div class="outerRow">
+				<div class="innerColTitle">
+					<div class="stickySteps">
+						<h5 class="pb-2 align-items-center" style="color:#721CFF;">
+							NEXT STEPS
+						</h5>
+						  <h4 class="align-items-center">
+							  Fund your startup in three steps:
+						  </h4>
+					</div>
+				</div>
+				<div class="innerCol">
+					<div class="feature col">
+						<div class="stickyStepsSmall">
+							<h5 class="pb-2 align-items-center" style="color:#721CFF;">
+								NEXT STEPS
+							</h5>
+							  <h4 class="align-items-center">
+								  Fund your startup in three steps:
+							  </h4>
+						</div>
+						<div class="stepBox">
+							<div class="stepBoxTitle">1</div>
+							<div class="greyBoxText">Join today by filling out our 2 minute form</div>
+						</div>
+						<div class="stepBox">
+							<div class="stepBoxTitle">2</div>
+							<div class="greyBoxText">Get warm intros with top investors</div>
+						</div>
+						<div class="stepBox">
+							<div class="stepBoxTitle">3</div>
+							<div class="greyBoxText">Tell your story and raise your round</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  	</div>
 
-  	<div class="container px-4 py-5" id="steps">
-  		
-  		<h2 class="pb-4 align-items-center">
-			What you get from joining our network
-		</h2>
-		
-
-		<h5 class="pb-2" style="color: #454545;">
-			<i class="fa fa-chevron-right" style="color: #721CFF"></i>&nbsp;
-			Join a community of the dynamic founders in North America
-		</h5>
-		<h5 class="pb-2" style="color: #454545;">
-			<i class="fa fa-chevron-right" style="color: #721CFF"></i>&nbsp;
-			Newsletter about updates on the startup world
-		</h5>
-		<h5 class="pb-2" style="color: #454545;">
-			<i class="fa fa-chevron-right" style="color: #721CFF"></i>&nbsp;
-			Access to investors ($5k-500k)
-		</h5><br><br>
-
-		<h4 class="text-center pt-5" style="color: #454545;">
-			Our investors include
-		</h4>
-
-  		<div class="logos pb-5">
-  			<div class="logos-slide">
-  				<img src="./assets//bcg.png" height="200px">
-				<img src="./assets//coinbase.png" height="200px">
-				<img src="./assets//microsoft.png" height="200px">
-				<img src="./assets//dialogue.png" height="200px">
-				<img src="./assets//google.png" height="200px">
-				<img src="./assets//deloitte.png" height="200px">
-				<img src="./assets//scale.png" height="200px">
-				<img src="./assets//wealthsimple.png" height="200px">
-				<img src="./assets//superhuman.png" height="200px">
-				<img src="./assets//clearco.png" height="200px">
-				<img src="./assets//amazon.png" height="200px">
-				<img src="./assets//hopper.png" height="200px">				
-  			</div>
-  			<div class="logos-slide">
-  				<img src="./assets//bcg.png" height="200px">
-				<img src="./assets//coinbase.png" height="200px">
-				<img src="./assets//microsoft.png" height="200px">
-				<img src="./assets//dialogue.png" height="200px">
-				<img src="./assets//google.png" height="200px">
-				<img src="./assets//deloitte.png" height="200px">
-				<img src="./assets//scale.png" height="200px">
-				<img src="./assets//wealthsimple.png" height="200px">
-				<img src="./assets//superhuman.png" height="200px">
-				<img src="./assets//clearco.png" height="200px">
-				<img src="./assets//amazon.png" height="200px">
-				<img src="./assets//hopper.png" height="200px">	
-  			</div>
-  		</div>
-
-  	</div><br><br>
-  	
-
-
-	<div class="container px-4 py-5" id="heading">
-		<h2 class="pb-4 align-items-center">Startup FAQs</h2>
+	<div class="container">
+		<h2 class="greyBoxTitle">FAQ</h2>
 
   	<div id="accordion" class="pb-5">
-
-		    <div class="card">
-			    <div class="card-header">
-			        <a class="collapsed btn" data-bs-toggle="collapse" href="#card1">
-			        	<h5>
-			        		<i class="fa fa-plus-circle" style="font-size:20px;color:#721CFF"></i>
-			        		&nbsp;&nbsp;How much will this cost me?
-			        	</h5>
-			        </a>
-			    </div>
-			    <div id="card1" class="collapse" data-bs-parent="#accordion">
-			        <div class="card-body">
-			          Nothing! Joining the Moonarch network is <b>free</b> for accelerators and startups
-			        </div>
-			    </div>
-		    </div><br>
-
-		    <div class="card">
-			    <div class="card-header">
-			        <a class="collapsed btn" data-bs-toggle="collapse" href="#card2">
-			        	<h5>
-			        		<i class="fa fa-plus-circle" style="font-size:20px;color:#721CFF"></i>
-			        		&nbsp;&nbsp;How long will it take me to fill out the form?
-			        	</h5>
-			        </a>
-			    </div>
-			    <div id="card2" class="collapse" data-bs-parent="#accordion">
-			        <div class="card-body">
-			          It takes on average <b>2 minutes</b> to fill out the form
-			        </div>
-			    </div>
-		    </div><br>
-
-		    <div class="card">
-			    <div class="card-header">
-			        <a class="collapsed btn" data-bs-toggle="collapse" href="#card3">
-			        	<h5>
-			        		<i class="fa fa-plus-circle" style="font-size:20px;color:#721CFF"></i>
-			        		&nbsp;&nbsp;Does Moonarch take equity, proprietary data or IP?
-			        	</h5>
-			        </a>
-			    </div>
-			    <div id="card3" class="collapse" data-bs-parent="#accordion">
-			        <div class="card-body">
-			          No, Moonarch doesn't take any equity, proprietary data or IP
-			        </div>
-			    </div>
-		    </div><br>
-
-		    <div class="card">
-			    <div class="card-header">
-			        <a class="collapsed btn" data-bs-toggle="collapse" href="#card4">
-			        	<h5>
-			        		<i class="fa fa-plus-circle" style="font-size:20px;color:#721CFF"></i>
-			        		&nbsp;&nbsp;How does Moonarch make money then?
-			        	</h5>
-			        </a>
-			    </div>
-			    <div id="card4" class="collapse" data-bs-parent="#accordion">
-			        <div class="card-body">
-			          Moonarch partners with VC firms and angels to invest in you
-			        </div>
-			    </div>
-		    </div><br>
-
-
-
+			<div style="overflow: hidden">
+				<div class="faqBox question" onclick="toggleFaq('one')">
+					<img src="./assets/icon/plus.png" class="plus" id="onePlus" />
+					<div>How much will this cost me?</div>
+				</div>
+				<div class="faqBox answer toggled" id="one">Nothing! The Moonarch network is completely free for both startups and accelerators</div>
+			</div>
+			<div style="margin-top: -60px; overflow: hidden">
+				<div class="faqBox question" onclick="toggleFaq('two')">
+					<img src="./assets/icon/plus.png" class="plus" id="twoPlus" />
+					<div>How long is the process?</div>
+				</div>
+				<div class="faqBox answer toggled" id="two">The form should take less than 2 minutes to fill out. It can take up to two weeks for us to process your application</div>
+			</div>
+			<div style="margin-top: -60px; overflow: hidden">
+				<div class="faqBox question" onclick="toggleFaq('three')">
+					<img src="./assets/icon/plus.png" class="plus" id="threePlus" />
+					<div>Does Moonarch take equity?</div>
+				</div>
+				<div class="faqBox answer toggled" id="three">No, Moonarch doesn't take any equity even if you raise money through our investors</div>
+			</div>
+			<div style="margin-top: -60px; overflow: hidden">
+				<div class="faqBox question" onclick="toggleFaq('four')">
+					<img src="./assets/icon/plus.png" class="plus" id="fourPlus" />
+					<div>Does Moonarch ask about proprietary data?</div>
+				</div>
+				<div class="faqBox answer toggled" id="four">Moonarch will never ask question concerning your proprietary data</div>
+			</div>
+			<div style="margin-top: -60px; overflow: hidden">
+				<div class="faqBox question" onclick="toggleFaq('five')">
+					<img src="./assets/icon/plus.png" class="plus" id="fivePlus" />
+					<div>How does Moonarch make money then?</div>
+				</div>
+				<div class="faqBox answer toggled" id="five">Moonarch partners with VC firms and angels to invest in you</div>
+			</div>
   	</div>
   	</div>
-  	<br><br><br>
-
-
 
 	<!-- Footer -->
-	<div class="mt-5 pt-5 pb-5 footer" style="background: black; color:white;"><br><br>
+	<div class="mt-5 pt-5 pb-5 footer" style="background: var(--moonBlack); color:white;">
 		<div class="container">
 		  <div class="row">
 		    <div class="col-lg-5 col-xs-12 about-company">
 		    <a href="https://moonarch.io/">
 		      	<img src="./assets/MoonarchLogo.png" class="mb-3" alt="Moonarch" height="60px">
 		    </a>
-		      <p class="pr-5 pt-3 text-white-50">© 2023 Moonarch Inc.</p>
 		    </div>
-		    <div class="col-lg-3 col-xs-12 links">
-		      <h4 class="mt-lg-0 mt-sm-3 mb-4" style="color:;">Links</h4>
+		    <!-- <div class="col-lg-3 col-xs-12 links">
+		      <h4 class="mt-lg-0 mt-sm-3 mb-4">Links</h4>
 		        <ul class="list-unstyled m-0 p-0">
 		          <li>
 		          	<a href="mailto:team@moonarch.io" class="link1" style="
@@ -368,22 +302,22 @@
 		          	">For founders</a>
 		          </li>
 		        </ul>
-		    </div>
-		    <div class="col-lg-4 col-xs-12 location">
+		    </div> -->
+			<a href="mailto:team@moonarch.io" style="text-decoration: none; color: #FFFFFF;">
+				<p><i class="fa fa-lg fa-envelope mr-3" style="color: #721CFF;"></i>&nbsp;&nbsp;team@moonarch.io</p>
+			</a>
+			<p>
+				<a href="https://www.linkedin.com/company/moonarch-io/"><i class="fa fa-lg fa-linkedin-square" style="color: #721CFF;"></i></a>&nbsp;&nbsp;
+				<a href="https://twitter.com/Moonarch_io"><i class="fa fa-lg fa-twitter" style="color: #721CFF;"></i></a>
+			</p>
+		    <!-- <div class="col-lg-4 col-xs-12 location">
 		      <h4 class="mt-lg-0 mt-sm-4 mb-4">Contact</h4>
-		      <a href="mailto:team@moonarch.io" style="text-decoration: none; color: #FFFFFF;">
-		      	<p><i class="fa fa-lg fa-envelope mr-3" style="color: #721CFF;"></i>&nbsp;&nbsp;team@moonarch.io</p>
-		      </a>
-		      <p>
-		      	<a href="https://www.linkedin.com/company/moonarch-io/"><i class="fa fa-lg fa-linkedin-square" style="color: #721CFF;"></i></a>&nbsp;&nbsp;
-		      	<a href="https://twitter.com/Moonarch_io"><i class="fa fa-lg fa-twitter" style="color: #721CFF;"></i></a>
-		      </p>
-		    </div>
-		  </div><br><br><br><br><br><br><br><br>
+		      
+		    </div> -->
+		  </div>
+		  <p class="pr-5 pt-3 text-white-50">© 2023 Moonarch Inc.</p>
 		</div>
 	</div> 
-
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

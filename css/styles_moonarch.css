@@ -1,13 +1,15 @@
-/*
-main purple = 721CFF
-hover purple = 914dff
-*/
-
+:root {
+  --moonBlue: #721CFF;
+  --moonBack: #f8f8f8; 
+  --moonBlueLight: #a771fe;
+  --moonBlack: #03001C;
+  /* --moonBack: linear-gradient(36deg, rgba(233,220,255,1) 0%, rgba(219,197,255,1) 24%, rgba(233,220,255,1) 45%, rgba(219,197,255,1) 61%, rgba(233,220,255,1) 73%, rgba(219,197,255,1) 100%); */
+}
 
 /* Main action btn */
 .btn-custom:hover {
-  background-color: #914dff !important;
-  border-color: #914dff !important;
+  background-color: var(--moonBlue) !important;
+  border-color: var(--moonBlue) !important;
   color: #FFFFFF!important;
 }
 
@@ -18,7 +20,7 @@ hover purple = 914dff
 }
 
 .nav-link:hover {
-	color: #914dff !important;
+	color: var(--moonBlue) !important;
 }
 
 .nav-link::after {
@@ -51,7 +53,7 @@ hover purple = 914dff
 .logos {
   overflow: hidden;
   padding: 60px 0;
-  background: white;
+  background: var(--moonBack);
   white-space: nowrap;
   position: relative;
 }
@@ -60,7 +62,7 @@ hover purple = 914dff
 .logos:after {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 100%;
   height: 100%;
   content: "";
   z-index: 2;
@@ -68,12 +70,12 @@ hover purple = 914dff
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to left, #eaeaea05, #eaeaea05, #eaeaea05, #eaeaea05, var(--moonBack));
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to right, #eaeaea05, #eaeaea05, #eaeaea05, #eaeaea05, var(--moonBack));
 }
 
 .logos:hover .logos-slide {
@@ -88,4 +90,277 @@ hover purple = 914dff
 .logos-slide img {
   height: 50px;
   margin: 0 40px;
+}
+
+#stats {
+  background: var(--moonBlack);
+  border-radius: 20px;
+}
+
+.blueButton {
+  border: 5px solid var(--moonBlue);
+	background-color: var(--moonBlue);
+  color: #FFFFFF;
+  border-radius: 50px;
+  width: 335px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+}
+.blueButton:hover {
+  background-color: var(--moonBlueLight);
+  /* width: 370px; */
+}
+.blueButtonInner {
+  width: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all ease-in-out 0.2s;
+}
+/* .blueButton:hover .blueButtonInner {
+  width: 230px;
+} */
+.arrows {
+  max-width: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.arrowIcon {
+  width: 30px;
+  height: 16px;
+  transform: translateX(-30px);
+  transition: all ease-in 0.2s;
+}
+.blueButton:hover .arrowIcon {
+  transform: translateX(-10px);
+  transition: all ease-in 0.3s;
+}
+
+.networkSticky {
+  height: fit-content;
+}
+.stickyBox {
+  height: 100px;
+  top: 0px;
+  position: sticky;
+}
+.greyBox {
+  top: 100px;
+  height: 350px;
+  position: sticky;
+  border-radius: 20px;
+  border: thin solid lightgray;
+  background: var(--moonBack);
+}
+.blueBox {
+  height: 350px;
+  position: sticky;
+  border-radius: 20px;
+  border: thin solid var(--moonBlack);
+  background: var(--moonBlack);
+  color: white;
+}
+.tabTitle {
+  transform: translateY(-100%);
+}
+.greyBoxTitle {
+  font-size: 40px;
+  color: black;
+  font-weight: thin;
+  margin-bottom: 10px;
+}
+.greyBoxText {
+  font-size: 20px;
+}
+.outerRow {
+  display: flex;
+  flex-direction: row;
+}
+.innerColTitle {
+  width: 30%;
+}
+.stickySteps {
+  position: sticky;
+  top: 50px;
+  margin-bottom: 45px;
+}
+.stickyStepsSmall {
+  display: none;
+}
+.innerCol {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.stepBoxes {
+  margin-top: 30px;
+}
+.stepBox {
+  height: 100px;
+  border-radius: 20px;
+  border: thin solid lightgray;
+  background: var(--moonBack);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 30px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 50px;
+}
+.stepBoxTitle {
+  font-size: 50px;
+  margin: 10px;
+  margin-right: 30px;
+  color: var(--moonBlue);
+}
+.faqBox {
+  border-radius: 20px;
+  border: thin solid lightgray;
+  background: var(--moonBack);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 20px;
+}
+.question {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+  font-size: 20px;
+}
+.question:hover {
+  background: #f1f0f0;
+}
+.answer {
+  position: relative;
+  background: white;
+  z-index: 1;
+  transform: translateY(-100%);
+  transition: all ease-in-out 0.2s;
+  height: 72px;
+}
+.plus {
+  margin: 0 10px;
+  transition: all ease-in-out 0.2s;
+  height: 25px;
+  width: 25px;
+}
+.fixedNav {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 5;
+  width: 200px;
+}
+@media only screen and (max-width: 850px) {
+  .greyBoxTitle {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .tabTitle {
+    transform: translateY(0);
+  }
+  .greyBoxTitle {
+    font-size: 30px;
+  }
+  .outerRow {
+    flex-direction: column;
+  }
+  .innerColTitle {
+    width: 100%;
+  }
+  .innerCol {
+    width: 100%;
+  }
+  .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-title {
+    width: 30%;
+    text-align: right;
+    margin-right: 10px;
+  }
+  .alignL {
+    width: 30%;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .greyBox {
+    margin-top: 5px;
+  }
+  .blueBox {
+    margin-top: 5px;
+  }
+  .stickyBox {
+    top: 30px;
+  }
+  .stickySteps {
+    display: none;
+  }
+  .stickyStepsSmall {
+    top: 10px;
+    display: block;
+    position: sticky;
+    margin-bottom: 45px;
+  }
+  .stepBox {
+    top: 90px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .greyBoxTitle {
+    font-size: 25px;
+  }
+  .greyBoxText {
+    font-size: 16px;
+  }
+  .blueBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .stickyStepsSmall {
+    top: 30px;
+  }
+  .stepBox {
+    top: 120px;
+  }
+  .fixedNav {
+    width: 130px;
+    height: 40px;
+  }
+  .blueButtonInner {
+    font-size: 13px;
+  }
+  .blueButton:hover .arrowIcon {
+    transform: translateX(-28px);
+  }
+  .bigBlue {
+    width: 250px;
+  }
+  .question {
+    height: 72px;
+    font-size: 16px;
+  }
+  .answer {
+    font-size: 13px;
+  }
+  .card-title {
+    width: 50%;
+  }
+  .alignL {
+    width: 50%;
+  }
 }

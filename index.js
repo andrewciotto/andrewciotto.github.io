@@ -113,4 +113,25 @@ function reveal() {
   }
 }
 
+function toggleFaq(name) {
+  plusName = name + "Plus";
+  if (document.getElementById(name).classList.contains("toggled")) {
+    document.getElementById(name).classList.remove("toggled");
+    document.getElementById(name).style.paddingTop = '40px';
+    document.getElementById(name).style.transform = 'translateY(-20px)';
+    document.getElementById(name).style.height = 'fit-content';
+    document.getElementById(name).style.borderRadius = '0 0 20px 20px';
+    document.getElementById(name).style.marginBottom = '50px';
+    document.getElementById(plusName).style.transform = 'rotate(45deg)';
+  } else {
+    document.getElementById(name).classList.add("toggled");
+    document.getElementById(name).style.paddingTop = '20px';
+    document.getElementById(name).style.transform = 'translateY(-100%)';
+    document.getElementById(name).style.height = '72px';
+    document.getElementById(name).style.borderRadius = '20px';
+    document.getElementById(name).style.marginBottom = '0';
+    document.getElementById(plusName).style.transform = 'rotate(0)';
+  }
+}
+
 window.addEventListener("scroll", reveal);
