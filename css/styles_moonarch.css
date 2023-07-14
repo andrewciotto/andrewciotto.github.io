@@ -342,7 +342,7 @@
     height: 40px;
   }
   .blueButtonInner {
-    font-size: 13px;
+    font-size: 12px;
   }
   .blueButton:hover .arrowIcon {
     transform: translateX(-28px);
