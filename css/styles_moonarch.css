@@ -143,7 +143,12 @@
   transform: translateX(-10px);
   transition: all ease-in 0.3s;
 }
-
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 #mainLogo {
   position: absolute;
   top: 10px;
@@ -401,6 +406,9 @@
   }
 }
 @media only screen and (max-width: 400px) {
+  .header {
+    height: 120vh;
+  }
   #mainLogo {
     height: 30px;
     width: 113px;
