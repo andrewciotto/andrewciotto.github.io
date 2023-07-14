@@ -97,6 +97,9 @@
   border-radius: 20px;
 }
 
+.phoneMainButton {
+  justify-content: center;
+}
 .blueButton {
   border: 5px solid var(--moonBlue);
 	background-color: var(--moonBlue);
@@ -141,6 +144,19 @@
   transition: all ease-in 0.3s;
 }
 
+#mainLogo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+  height: 45px;
+  width: 170px;
+}
+#bottomLogo {
+  height: 45px;
+  width: 170px;
+  margin-bottom: 20px;
+}
 .networkSticky {
   height: fit-content;
 }
@@ -281,21 +297,6 @@
   .innerCol {
     width: 100%;
   }
-  .card-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .card-title {
-    width: 30%;
-    text-align: right;
-    margin-right: 10px;
-  }
-  .alignL {
-    width: 30%;
-    text-align: left;
-    margin-left: 10px;
-  }
   .greyBox {
     margin-top: 5px;
   }
@@ -338,7 +339,7 @@
     top: 120px;
   }
   .fixedNav {
-    width: 130px;
+    width: 150px;
     height: 40px;
   }
   .blueButtonInner {
@@ -362,5 +363,53 @@
   }
   .alignL {
     width: 50%;
+  }
+  .headerPhone {
+    margin-top: 10vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .phoneTitle {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .statRow {
+    flex-direction: row;
+  }
+  /* .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  .card-title {
+    width: 30vw;
+    /* text-align: right;
+    margin-right: 10px; */
+  }
+  .alignL {
+    width: 30vw;
+    /* text-align: left;
+    margin-left: 10px; */
+  }
+  .phoneMainButton {
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #mainLogo {
+    height: 30px;
+    width: 113px;
+  }
+  #bottomLogo {
+    height: 30px;
+    width: 113px;
+  }
+  .phoneTitle {
+    font-size: 20px;
   }
 }
