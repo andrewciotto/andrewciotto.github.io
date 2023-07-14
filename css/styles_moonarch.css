@@ -171,12 +171,24 @@
   position: sticky;
 }
 .greyBox {
-  top: 100px;
+  /* top: 100px; */
   height: 350px;
   position: sticky;
   border-radius: 20px;
   border: thin solid lightgray;
   background: var(--moonBack);
+}
+.sOne {
+  top: 100px;
+}
+.sTwo {
+  top: 150px;
+}
+.sThree {
+  top: 200px;
+}
+.sFour {
+  top: 250px;
 }
 .blueBox {
   height: 350px;
@@ -309,7 +321,19 @@
     margin-top: 5px;
   }
   .stickyBox {
-    top: 30px;
+    top: 0px;
+  }
+  .sOne {
+    top: 50px;
+  }
+  .sTwo {
+    top: 100px;
+  }
+  .sThree {
+    top: 150px;
+  }
+  .sFour {
+    top: 200px;
   }
   .stickySteps {
     display: none;
@@ -418,6 +442,9 @@
     width: 113px;
   }
   .phoneTitle {
+    font-size: 20px;
+  }
+  .networkSmall {
     font-size: 20px;
   }
 }
