@@ -1,9 +1,9 @@
 :root {
   --moonBlue: #721CFF;
-  --moonBack: #f8f8f8; 
+  --moonGrey: #f8f8f8; 
   --moonBlueLight: #a771fe;
   --moonBlack: #03001C;
-  /* --moonBack: linear-gradient(36deg, rgba(233,220,255,1) 0%, rgba(219,197,255,1) 24%, rgba(233,220,255,1) 45%, rgba(219,197,255,1) 61%, rgba(233,220,255,1) 73%, rgba(219,197,255,1) 100%); */
+  /* --moonGrey: linear-gradient(36deg, rgba(233,220,255,1) 0%, rgba(219,197,255,1) 24%, rgba(233,220,255,1) 45%, rgba(219,197,255,1) 61%, rgba(233,220,255,1) 73%, rgba(219,197,255,1) 100%); */
 }
 
 /* Main action btn */
@@ -53,7 +53,7 @@
 .logos {
   overflow: hidden;
   padding: 60px 0;
-  background: var(--moonBack);
+  background: var(--moonGrey);
   white-space: nowrap;
   position: relative;
 }
@@ -70,12 +70,13 @@
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, #eaeaea05, #eaeaea05, #eaeaea05, #eaeaea05, var(--moonBack));
+  background: linear-gradient(to left, #eaeaea05, 95%, var(--moonGrey));
+
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, #eaeaea05, #eaeaea05, #eaeaea05, #eaeaea05, var(--moonBack));
+  background: linear-gradient(to right, #eaeaea05, 95%, var(--moonGrey));
 }
 
 .logos:hover .logos-slide {
@@ -88,15 +89,25 @@
 }
 
 .logos-slide img {
-  height: 50px;
+  height: 70px;
   margin: 0 40px;
 }
 
 #stats {
   background: var(--moonBlack);
   border-radius: 20px;
+  position: relative;
+  z-index: 1;
 }
-
+.backLine {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 1px;
+  /* background: var(--moonBlueLight); */
+  border-left: thin solid #e4e4e4;
+}
 .phoneMainButton {
   justify-content: center;
 }
@@ -166,17 +177,21 @@
   height: fit-content;
 }
 .stickyBox {
+  padding-left: 3rem;
+  margin-left: 1rem;
+  /* padding-top: 3rem;
+  margin-top: 1rem; */
   height: 100px;
-  top: 0px;
+  top: 16px;
   position: sticky;
 }
 .greyBox {
   /* top: 100px; */
-  height: 350px;
+  height: 500px;
   position: sticky;
-  border-radius: 20px;
+  border-radius: 30px;
   border: thin solid lightgray;
-  background: var(--moonBack);
+  background: var(--moonGrey);
 }
 .sOne {
   top: 100px;
@@ -191,12 +206,16 @@
   top: 250px;
 }
 .blueBox {
-  height: 350px;
+  height: 500px;
   position: sticky;
-  border-radius: 20px;
+  border-radius: 30px;
   border: thin solid var(--moonBlack);
   background: var(--moonBlack);
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .tabTitle {
   transform: translateY(-100%);
@@ -237,7 +256,7 @@
   height: 100px;
   border-radius: 20px;
   border: thin solid lightgray;
-  background: var(--moonBack);
+  background: var(--moonGrey);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -255,7 +274,7 @@
 .faqBox {
   border-radius: 20px;
   border: thin solid lightgray;
-  background: var(--moonBack);
+  background: var(--moonGrey);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -293,6 +312,10 @@
   z-index: 5;
   width: 200px;
 }
+.footer {
+  position: relative;
+  z-index: 1;
+}
 @media only screen and (max-width: 850px) {
   .greyBoxTitle {
     font-size: 30px;
@@ -322,18 +345,22 @@
   }
   .stickyBox {
     top: 0px;
+    padding-left: 1rem;
+    margin-left: 0rem;
+    padding-top: 1rem;
+    /* margin-top: 0rem; */
   }
   .sOne {
-    top: 50px;
+    top: 60px;
   }
   .sTwo {
-    top: 100px;
+    top: 110px;
   }
   .sThree {
-    top: 150px;
+    top: 160px;
   }
   .sFour {
-    top: 200px;
+    top: 210px;
   }
   .stickySteps {
     display: none;
@@ -346,6 +373,9 @@
   }
   .stepBox {
     top: 90px;
+  }
+  .midLine {
+    display: none;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -445,6 +475,9 @@
     font-size: 20px;
   }
   .networkSmall {
+    font-size: 20px;
+  }
+  .greyBoxTitle {
     font-size: 20px;
   }
 }
