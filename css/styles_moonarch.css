@@ -106,7 +106,7 @@
   z-index: 0;
   width: 1px;
   /* background: var(--moonBlueLight); */
-  border-left: thin solid #e4e4e4;
+  border-left: thin solid #efefef;
 }
 .phoneMainButton {
   justify-content: center;
