@@ -79,9 +79,9 @@
   background: linear-gradient(to right, #eaeaea05, 95%, var(--moonGrey));
 }
 
-.logos:hover .logos-slide {
+/* .logos:hover .logos-slide {
   animation-play-state: paused;
-}
+} */
 
 .logos-slide {
   display: inline-block;
@@ -155,15 +155,14 @@
   transition: all ease-in 0.3s;
 }
 .header {
+  margin-top: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 #mainLogo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  /* position: absolute; */
   z-index: 5;
   height: 45px;
   width: 170px;
@@ -305,12 +304,17 @@
   height: 25px;
   width: 25px;
 }
+.customNavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
 .fixedNav {
   position: fixed;
-  top: 10px;
-  right: 20px;
   z-index: 5;
   width: 200px;
+  transform: translateX(-100%);
 }
 .footer {
   position: relative;
