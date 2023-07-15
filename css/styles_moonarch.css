@@ -5,6 +5,10 @@
   --moonBlack: #03001C;
   /* --moonGrey: linear-gradient(36deg, rgba(233,220,255,1) 0%, rgba(219,197,255,1) 24%, rgba(233,220,255,1) 45%, rgba(219,197,255,1) 61%, rgba(233,220,255,1) 73%, rgba(219,197,255,1) 100%); */
 }
+::selection {
+  background: var(--moonBlue); /* WebKit/Blink Browsers */
+  color: white;
+}
 
 /* Main action btn */
 .btn-custom:hover {
@@ -227,6 +231,10 @@
 }
 .greyBoxText {
   font-size: 20px;
+}
+.bolder {
+  font-weight: bold;
+  color: var(--moonBlue)
 }
 .outerRow {
   display: flex;
