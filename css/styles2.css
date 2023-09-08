@@ -30,6 +30,8 @@
   }
   
   #startupForm {
+    background: #03001C;
+    color: white;
     width: 100%;
     height: calc(100vh - 60px) !important;
   }
