@@ -168,12 +168,12 @@
 #mainLogo {
   /* position: absolute; */
   z-index: 5;
-  height: 45px;
-  width: 282px;
+  height: 30px;
+  width: 188px;
 }
 #bottomLogo {
-  height: 45px;
-  width: 282px;
+  height: 30px;
+  width: 188px;
   margin-bottom: 20px;
 }
 .networkSticky {
@@ -476,12 +476,12 @@
     height: 120vh;
   }
   #mainLogo {
-    height: 30px;
-    width: 113px;
+    height: 20px;
+    width: 125px;
   }
   #bottomLogo {
-    height: 30px;
-    width: 113px;
+    height: 20px;
+    width: 125px;
   }
   .phoneTitle {
     font-size: 20px;
