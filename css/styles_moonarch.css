@@ -186,17 +186,17 @@
   margin-top: 1rem; */
   height: 100px;
   top: 16px;
-  position: sticky;
+  /* position: sticky; */
 }
 .greyBox {
   /* top: 100px; */
   height: 500px;
-  position: sticky;
+  /* position: sticky; */
   border-radius: 30px;
   border: thin solid lightgray;
   background: var(--moonGrey);
 }
-.sOne {
+/* .sOne {
   top: 100px;
 }
 .sTwo {
@@ -207,10 +207,10 @@
 }
 .sFour {
   top: 250px;
-}
+} */
 .blueBox {
   height: 500px;
-  position: sticky;
+  /* position: sticky; */
   border-radius: 30px;
   border: thin solid var(--moonBlack);
   background: var(--moonBlack);
@@ -244,7 +244,7 @@
   width: 30%;
 }
 .stickySteps {
-  position: sticky;
+  /* position: sticky; */
   top: 50px;
   margin-bottom: 45px;
 }
@@ -269,7 +269,7 @@
   justify-content: flex-start;
   padding: 0 30px;
   margin-bottom: 10px;
-  position: sticky;
+  /* position: sticky; */
   top: 50px;
 }
 .stepBoxTitle {
@@ -380,7 +380,7 @@
   .stickyStepsSmall {
     top: 10px;
     display: block;
-    position: sticky;
+    /* position: sticky; */
     margin-bottom: 45px;
   }
   .stepBox {
