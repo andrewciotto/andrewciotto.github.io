@@ -17,7 +17,6 @@
   color: #FFFFFF!important;
 }
 
-
 /* Nav bar links */
 .nav-link {
 	position: relative !important;
@@ -329,6 +328,9 @@
   z-index: 1;
 }
 @media only screen and (max-width: 850px) {
+  /* body {
+    background: var(--moonBlack) !important;
+  } */
   .greyBoxTitle {
     font-size: 30px;
   }

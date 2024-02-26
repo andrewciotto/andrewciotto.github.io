@@ -58,7 +58,7 @@ const shrinkBox = document.getElementById('shrinkingBox');
 window.onscroll = function() {
   navEx.classList.remove('expanded');
   navEx.classList.remove("change");
-  var percent = 100 - (window.scrollY - window.innerHeight);
+  // var percent = 100 - (window.scrollY - window.innerHeight);
   // if (percent > 90 && percent < 100) {
   //   shrinkBox.style.width = 100 - (window.scrollY - window.innerHeight) + '%';
   //   shrinkBox.style.borderRadius = '50px';
