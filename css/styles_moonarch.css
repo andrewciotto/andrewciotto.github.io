@@ -55,11 +55,15 @@
 }
 
 .logos {
-  overflow: hidden;
-  padding: 60px 0;
-  background: var(--moonGrey);
-  white-space: nowrap;
+  /* overflow: hidden; */
+  /* padding: 60px 0; */
+  /* background: var(--moonGrey); */
+  /* white-space: nowrap; */
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center logos */
+  padding: 30px 0;
 }
 
 .logos:before,
@@ -89,7 +93,7 @@
 
 .logos-slide {
   display: inline-block;
-  animation: 40s slide infinite linear;
+  /* animation: 40s slide infinite linear; */
 }
 
 .logos-slide img {
