@@ -99,6 +99,8 @@
 .logos-slide img {
   height: 70px;
   margin: 0 40px;
+  filter: grayscale(100%);
+  /* filter: brightness(0); */
 }
 
 #stats {
