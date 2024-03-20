@@ -1,7 +1,7 @@
 :root {
   --moonBlue: #721CFF;
   --moonGrey: #f8f8f8; 
-  --moonBlueLight: #a771fe;
+  --moonBlueLight: #c9a7ff;
   --moonBlack: #03001C;
   /* --moonGrey: linear-gradient(36deg, rgba(233,220,255,1) 0%, rgba(219,197,255,1) 24%, rgba(233,220,255,1) 45%, rgba(219,197,255,1) 61%, rgba(233,220,255,1) 73%, rgba(219,197,255,1) 100%); */
 }
@@ -53,6 +53,22 @@
     transform: translateX(-100%);
   }
 }
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+.navLink {
+  margin: 15px;
+  height: 30px;
+  color: var(--moonBlue);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+.navLink:hover {
+  border-bottom: solid 5px var(--moonBlue);
+  transform: translate(0, -5px);
+}
 
 .logos {
   overflow: hidden;
@@ -96,12 +112,127 @@
   height: 70px;
   margin: 0 40px;
 }
-
-#stats {
+.statRow {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 62px;
+  margin-top: 0;
+}
+.logoRow {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  padding: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--moonBlue); */
+}
+.industryCol {
+  display: flex;
+  flex-direction: column;
+}
+.industryRow {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--moonBlue);
+  border-radius: 10px;
+  border: 5px solid var(--moonBlue);
+  margin: 5px 0;
+}
+.industryLogos {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+.logoOutline {
+  margin: 30px;
+}
+.logoImg {
+  height: 40px;
+  /* filter: grayscale(100%); */
+  /* filter: brightness(0) invert(0); */
+  transition: ease-in-out 0.2s;
+  /* opacity: 0; */
+}
+.logoImg1 {
+  height: 40px;
+  /* filter: brightness(0) invert(0); */
+  transition: ease-in-out 0.2s;
+  position: absolute;
+  transform: translate(-100%, 0);
+}
+.logImgHover {
+  height: 40px;
+  /* filter: brightness(0) invert(0); */
+  transition: ease-in-out 0.2s;
+  position: absolute;
+  transform: translate(-100%, 0);
+}
+.logoOutline:hover .logImgHover {
+  transform: translate(-100%, -10px) scale(1.4);
+}
+.logoOutline:hover .logoImg1 {
+  transform: translate(-100%, -5px) scale(1.2);
+  opacity: 0.4;
+  /* filter: brightness(0) invert(0); */
+}
+.logoOutline:hover .logoImg {
+  /* filter: brightness(0) invert(0); */
+  opacity: 0.2;
+}
+.statIcon {
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.218);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  transition: all ease-in-out 0.2s;
+  fill: white;
+}
+.statBox {
   background: var(--moonBlack);
-  border-radius: 20px;
-  position: relative;
-  z-index: 1;
+  border-radius: 10px;
+  width: calc(25% - 20px);
+  margin: 10px;
+  padding: 30px;
+}
+.statBox:hover .statIcon {
+  transform: rotate(30deg);
+}
+.statBoxBig {
+  width: calc(50% - 20px);
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: var(--moonBlue);
+	/* background-size: 400% 400%; */
+	/* animation: gradient1 15s ease infinite; */
+}
+@keyframes gradient1 {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradient2 {
+	0% {
+		background-position: 15% 65%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 15% 65%;
+	}
 }
 .backLine {
   position: fixed;
@@ -116,10 +247,10 @@
   justify-content: center;
 }
 .blueButton {
-  border: 5px solid var(--moonBlue);
+  border: 1px solid var(--moonBlue);
 	background-color: var(--moonBlue);
   color: #FFFFFF;
-  border-radius: 50px;
+  border-radius: 5px;
   width: 335px;
   height: 50px;
   display: flex;
@@ -129,15 +260,138 @@
 }
 .blueButton:hover {
   background-color: var(--moonBlueLight);
+  /* transform: translate(0px, -10px); */
   /* width: 370px; */
 }
+.blueButtonOuter {
+	background-color: var(--moonBlue);
+  width: 250px;
+  height: 50px;
+  border-radius: 7px;
+  border: none;
+  padding: 0;
+}
+.blueButtonInnerShell {
+  width: fit-content;
+  height: fit-content;
+  /* background-color: var(--moonBlue); */
+  background-color: black;
+  border-radius: 7px;
+}
 .blueButtonInner {
-  width: 170px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   transition: all ease-in-out 0.2s;
+  /* background-color: white; */
+  border-radius: 7px;
+  padding: 5px;
+  border: 2px solid var(--moonBlack);
+  /* background: var(--moonBlueLight); */
+  background: white;
+  color: var(--moonBlack);
+  transform: translate(5px, -5px);
+  /* color: white; */
+}
+.blueButtonOuter:hover .blueButtonInner {
+  /* transform: translate(5px, -5px); */
+  transform: translate(0px, 0px);
+}
+.blueButtonOuter:hover .blueButtonInnerShell {
+  /* transform: translate(5px, -5px); */
+  transform: translate(0px, 0px);
+}
+.updateBox {
+  width: calc(33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+.updateTag {
+  color: white;
+  padding: 3px 7px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.218);
+  width: fit-content;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.updateImgOutline {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.updateImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.whiteButtonOuter {
+  width: 150px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: white;
+  margin-top: 10px;
+}
+.whiteButtonInner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: all ease-in-out 0.2s;
+  /* background-color: white; */
+  border-radius: 7px;
+  padding: 5px;
+  border: 2px solid white;
+  /* background: var(--moonBlueLight); */
+  color: white;
+  transform: translate(5px, -5px);
+  /* color: white; */
+}
+.updateBox:hover .whiteButtonInner {
+  transform: translate(0px, 0px);
+}
+.faqBox:hover  .whiteButtonInner {
+  transform: translate(0px, 0px);
+}
+.stepBox:hover .whiteButtonInner {
+  transform: translate(0px, 0px);
+}
+.blueBox:hover .whiteButtonInner {
+  transform: translate(0px, 0px);
+}
+.arrow {
+  transition: all ease-in-out 0.2s;
+  /* margin-left: 40px; */
+}
+.arrowExternal {
+  transition: all ease-in-out 0.2s;
+  transform: rotate(-45deg)
+}
+.blueButtonOuter:hover .arrow {
+  transform: rotate(-45deg)
+}
+.blueButtonOuter:hover .arrowExternal {
+  transform: rotate(0deg)
+}
+.updateBox:hover .arrowExternal {
+  transform: rotate(0)
+}
+.stepBox:hover .arrowExternal {
+  transform: rotate(0deg)
+}
+.blueBox:hover .arrowExternal {
+  transform: rotate(0)
 }
 /* .blueButton:hover .blueButtonInner {
   width: 230px;
@@ -155,15 +409,20 @@
   transition: all ease-in 0.2s;
 }
 .blueButton:hover .arrowIcon {
-  transform: translateX(-10px);
+  /* transform: translateX(-10px); */
   transition: all ease-in 0.3s;
 }
 .header {
-  margin-top: 0;
-  height: 100vh;
+  /* margin-top: 0; */
+  padding-top: 100px;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  /* background: linear-gradient(-45deg, #b98eff, #b98eff white, white, white); */
+	/* background-size: 400% 400%; */
+	/* animation: gradient 5s ease infinite; */
 }
 #mainLogo {
   /* position: absolute; */
@@ -219,6 +478,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .tabTitle {
   transform: translateY(-100%);
@@ -228,6 +488,24 @@
   color: black;
   font-weight: thin;
   margin-bottom: 10px;
+}
+.smallGreyBoxTitle {
+  font-size: 20px;
+  color: rgb(80, 80, 80);
+  font-weight: thin;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.blueBoxTitle {
+  width: 100%;
+  text-align: center;
+  /* color: white; */
+  margin-bottom: 50px;
+}
+.textunderline {
+  color: var(--moonBlue);
+  border-bottom: 10px var(--moonBlue) solid;
+  font-weight: bold;
 }
 .greyBoxText {
   font-size: 20px;
@@ -256,22 +534,82 @@
   display: flex;
   flex-direction: column;
 }
-.stepBoxes {
-  margin-top: 30px;
+.stepCol {
+  display: flex;
+  flex-direction: column;
 }
-.stepBox {
-  height: 100px;
-  border-radius: 20px;
-  border: thin solid lightgray;
-  background: var(--moonGrey);
+.stepRow {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 0 30px;
-  margin-bottom: 10px;
-  /* position: sticky; */
-  top: 50px;
 }
+.stepRowOne {
+  justify-content: flex-start;
+}
+.stepRowTwo {
+  justify-content: flex-start;
+  /* padding: 0 25%; */
+}
+.stepRowThree {
+  justify-content: flex-start;
+  /* padding: 0 25%; */
+}
+.stepRowFour {
+  justify-content: flex-start;
+}
+.stepBox {
+  height: fit-content;
+  border-radius: 10px;
+  background: var(--moonBlue);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  flex-shrink: 0;
+  /* flex-grow: 0; */
+}
+.stopGap {
+  flex-shrink: 1;
+  width: 8%;
+}
+.stepContent {
+  width: 100%;
+}
+.stepTitle {
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+}
+.stepText {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+.stepTwoLeftPadding {
+  width: 25%;
+}
+.stepThreeLeftPadding {
+  width: 50%;
+}
+/* .stepThreeRightPadding {
+  width: 60vw;
+} */
+.stepFourLeftPadding {
+  width: 75%;
+}
+.firstStep {
+  background-color: #ee7752;
+  cursor: pointer;
+}
+.fourthStep  {
+  background-color: #088F8F;
+}
+/* .secondStep {
+  margin: 0 80% 0 20%;
+} */
 .stepBoxTitle {
   font-size: 50px;
   margin: 10px;
@@ -279,8 +617,8 @@
   color: var(--moonBlue);
 }
 .faqBox {
-  border-radius: 20px;
-  border: thin solid lightgray;
+  border-radius: 10px;
+  /* border: thin solid lightgray; */
   background: var(--moonGrey);
   display: flex;
   align-items: center;
@@ -293,6 +631,7 @@
   z-index: 2;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
+  color: white;
   font-size: 20px;
 }
 .question:hover {
@@ -307,16 +646,34 @@
   height: 72px;
 }
 .plus {
-  margin: 0 10px;
+  /* margin: 0 10px; */
   transition: all ease-in-out 0.2s;
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
+}
+.faqButtonOuter {
+  width: 50px;
+  margin: 0 20px -1px -1px;
+}
+.faqButtonInner {
+  background: var(--moonBlue);
+  display: flex;
+  align-items:center;
+  justify-content: center;
 }
 .customNavbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  height: 80px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(1.5rem);
+  padding: 10px 72px;
+  z-index: 5;
+  align-items: center;
 }
 .fixedNav {
   position: fixed;
@@ -448,9 +805,6 @@
     align-items: flex-start;
   }
 
-  .statRow {
-    flex-direction: row;
-  }
   /* .card-body {
     display: flex;
     align-items: center;
