@@ -1,22 +1,50 @@
 :root {
   --moonBlue: #721CFF;
   --moonGrey: #f8f8f8; 
-  --moonBlueLight: #c9a7ff;
+  --moonBlueLight: #DAD2FF;
+  --moonBlueDark: #2C076E;
   --moonBlack: #03001C;
+  --moonGreen: #2d884d;
+  --moonYellow: #FFC000;
+  --moonRed: #b34045;
+  --moonOrange: #ee7752;
   /* --moonGrey: linear-gradient(36deg, rgba(233,220,255,1) 0%, rgba(219,197,255,1) 24%, rgba(233,220,255,1) 45%, rgba(219,197,255,1) 61%, rgba(233,220,255,1) 73%, rgba(219,197,255,1) 100%); */
 }
 ::selection {
   background: var(--moonBlue); /* WebKit/Blink Browsers */
   color: white;
 }
-
+html {
+  scroll-behavior: smooth;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.itemRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
 /* Main action btn */
 .btn-custom:hover {
   background-color: var(--moonBlue) !important;
   border-color: var(--moonBlue) !important;
   color: #FFFFFF!important;
 }
-
+/* body {
+  background-size: 70px 70px;
+  background-image: radial-gradient(circle, #828282 1px, rgba(0, 0, 0, 0) 1px);
+} */
+/* body {
+  background-size: 100px 100px;
+  background-image:
+    linear-gradient(to right, lightgrey 1px, transparent 1px),
+    linear-gradient(to bottom, lightgrey 1px, transparent 1px);
+} */
 
 /* Nav bar links */
 .nav-link {
@@ -43,7 +71,6 @@
 	left: 0 !important;
 }
 
-
  /* IMG scroller */
 @keyframes slide {
   from {
@@ -69,7 +96,9 @@
   border-bottom: solid 5px var(--moonBlue);
   transform: translate(0, -5px);
 }
-
+.phoneMainButton {
+  flex-wrap: wrap;
+}
 .logos {
   /* overflow: hidden; */
   /* padding: 60px 0; */
@@ -127,10 +156,17 @@
   margin: 62px;
   margin-top: 0;
 }
+.container {
+  min-height: 600px;
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 .logoRow {
   flex-direction: row !important;
   flex-wrap: wrap;
-  padding: 62px;
+  /* padding: 62px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,20 +197,20 @@
 .logoImg {
   height: 40px;
   /* filter: grayscale(100%); */
-  /* filter: brightness(0) invert(0); */
+  filter: brightness(0) invert(0);
   transition: ease-in-out 0.2s;
   /* opacity: 0; */
 }
 .logoImg1 {
   height: 40px;
-  /* filter: brightness(0) invert(0); */
+  filter: brightness(0) invert(0);
   transition: ease-in-out 0.2s;
   position: absolute;
   transform: translate(-100%, 0);
 }
 .logImgHover {
   height: 40px;
-  /* filter: brightness(0) invert(0); */
+  filter: brightness(0) invert(0);
   transition: ease-in-out 0.2s;
   position: absolute;
   transform: translate(-100%, 0);
@@ -194,51 +230,35 @@
 .statIcon {
   width: 70px;
   height: 70px;
-  background: rgba(255, 255, 255, 0.218);
-  padding: 10px;
+  /* background: rgba(255, 255, 255, 0.218); */
+  /* padding: 10px; */
+  fill: var(--moonBlack);
   border-radius: 10px;
   margin-bottom: 50px;
   transition: all ease-in-out 0.2s;
-  fill: white;
 }
 .statBox {
-  background: var(--moonBlack);
+  /* background: var(--moonBlack); */
   border-radius: 10px;
   width: calc(25% - 20px);
   margin: 10px;
   padding: 30px;
 }
-.statBox:hover .statIcon {
-  transform: rotate(30deg);
-}
 .statBoxBig {
   width: calc(50% - 20px);
-  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-  background: var(--moonBlue);
-	/* background-size: 400% 400%; */
-	/* animation: gradient1 15s ease infinite; */
+  background-color: white;
+  /* color: black; */
+  /* border: thin solid var(--moonBlue); */
+  color: var(--moonBlueDark);
+  overflow: hidden;
+  background: var(--moonBlueLight);
 }
-@keyframes gradient1 {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+.lightTitle {
+  color: var(--moonBlueDark);
+  font-size: 50px;
 }
-@keyframes gradient2 {
-	0% {
-		background-position: 15% 65%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 15% 65%;
-	}
+.lightText {
+  color: var(--moonBlueDark);
 }
 .backLine {
   position: fixed;
@@ -273,7 +293,7 @@
 	background-color: var(--moonBlue);
   width: 250px;
   height: 50px;
-  border-radius: 7px;
+  border-radius: 10px;
   border: none;
   padding: 0;
 }
@@ -295,7 +315,7 @@
   /* background-color: white; */
   border-radius: 7px;
   padding: 5px;
-  border: 2px solid var(--moonBlack);
+  border: 1px solid var(--moonBlack);
   /* background: var(--moonBlueLight); */
   background: white;
   color: var(--moonBlack);
@@ -309,6 +329,58 @@
 .blueButtonOuter:hover .blueButtonInnerShell {
   /* transform: translate(5px, -5px); */
   transform: translate(0px, 0px);
+}
+.lightBox {
+  width: calc(33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--moonBlueDark);
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  /* transition: ease-in-out 0.2s; */
+  background: var(--moonBlueLight);
+  border: thin solid var(--moonBlue);
+	/* animation: gradient 5s ease infinite; */
+}
+/* .globeBackground {
+  background: url(../assets/globe.svg);
+} */
+.boxedText {
+  padding: 5px 10px;
+  min-width: fit-content;
+  border-radius: 5px;
+  border: thin solid var(--moonBlack);
+  margin: 4px;
+  width: fit-content;
+  transition: ease-in-out 0.2s;
+  background-color: white;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.smallTitle {
+  width: 100%;
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.largeTitle {
+  width: 100%;
+  text-align: left;
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 .updateBox {
   width: calc(33% - 20px);
@@ -343,7 +415,7 @@
 .whiteButtonOuter {
   width: 150px;
   height: 50px;
-  border-radius: 7px;
+  border-radius: 10px;
   background-color: white;
   margin-top: 10px;
 }
@@ -358,7 +430,7 @@
   /* background-color: white; */
   border-radius: 7px;
   padding: 5px;
-  border: 2px solid white;
+  border: 1px solid white;
   /* background: var(--moonBlueLight); */
   color: white;
   transform: translate(5px, -5px);
@@ -370,10 +442,16 @@
 .faqBox:hover  .whiteButtonInner {
   transform: translate(0px, 0px);
 }
+.faqBox:hover  .blueButtonInner {
+  transform: translate(0px, 0px);
+}
 .stepBox:hover .whiteButtonInner {
   transform: translate(0px, 0px);
 }
 .blueBox:hover .whiteButtonInner {
+  transform: translate(0px, 0px);
+}
+.statBoxBig:hover .whiteButtonInner {
   transform: translate(0px, 0px);
 }
 .arrow {
@@ -385,7 +463,7 @@
   transform: rotate(-45deg)
 }
 .blueButtonOuter:hover .arrow {
-  transform: rotate(-45deg)
+  transform: rotate(45deg)
 }
 .blueButtonOuter:hover .arrowExternal {
   transform: rotate(0deg)
@@ -421,7 +499,7 @@
 .header {
   /* margin-top: 0; */
   padding-top: 100px;
-  /* height: 100vh; */
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -435,6 +513,9 @@
   z-index: 5;
   height: 30px;
   width: 188px;
+}
+#mainLogoSmall {
+  display: none;
 }
 #bottomLogo {
   height: 30px;
@@ -489,13 +570,17 @@
 .tabTitle {
   transform: translateY(-100%);
 }
-.greyBoxTitle {
+.mainTitle {
   font-size: 40px;
   color: black;
   font-weight: thin;
   margin-bottom: 10px;
+  text-align: center;
 }
-.smallGreyBoxTitle {
+.mainText {
+  font-size: 20px;
+}
+.smallmainTitle {
   font-size: 20px;
   color: rgb(80, 80, 80);
   font-weight: thin;
@@ -510,7 +595,7 @@
 }
 .textunderline {
   color: var(--moonBlue);
-  border-bottom: 10px var(--moonBlue) solid;
+  /* border-bottom: 10px var(--moonBlue) solid; */
   font-weight: bold;
 }
 .greyBoxText {
@@ -534,6 +619,10 @@
 }
 .stickyStepsSmall {
   display: none;
+}
+.rowToCol {
+  display: flex;
+  flex-direction: row;
 }
 .innerCol {
   width: 70%;
@@ -611,7 +700,7 @@
   cursor: pointer;
 }
 .fourthStep  {
-  background-color: #088F8F;
+  background-color: var(--moonGreen);
 }
 /* .secondStep {
   margin: 0 80% 0 20%;
@@ -625,7 +714,7 @@
 .faqBox {
   border-radius: 10px;
   /* border: thin solid lightgray; */
-  background: var(--moonGrey);
+  background: white;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -637,11 +726,12 @@
   z-index: 2;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
-  color: white;
+  color: black;
   font-size: 20px;
+  background: var(--moonBlueLight);
 }
 .question:hover {
-  background: #f1f0f0;
+  background: var(--moonBlueLight);
 }
 .answer {
   position: relative;
@@ -657,12 +747,17 @@
   height: 30px;
   width: 30px;
 }
+.phoneTitle {
+  /* color: var(--moonBlueDark); */
+  color: black;
+}
 .faqButtonOuter {
   width: 50px;
   margin: 0 20px -1px -1px;
 }
 .faqButtonInner {
-  background: var(--moonBlue);
+  /* background: var(--moonBlue); */
+  background: white;
   display: flex;
   align-items:center;
   justify-content: center;
@@ -690,17 +785,46 @@
 .footer {
   position: relative;
   z-index: 1;
+  background: var(--moonBlack);
+  color:white;
+  padding: 0 70px;
 }
 @media only screen and (max-width: 850px) {
-  .greyBoxTitle {
+  .mainTitle {
     font-size: 30px;
+  }
+  .itemRow {
+    flex-direction: column !important;
+  }
+  .lightBox {
+    width: calc(100% - 20px);
+  }
+  .statBoxBig {
+    width: 100%;
+  }
+  .container {
+    min-height: 900px;
+  }
+  .header {
+    height: 600px !important;
   }
 }
 @media only screen and (max-width: 768px) {
+  .customNavbar {
+    padding: 10px 30px;
+  }
+  #mainLogo {
+    display: none;
+  }
+  #mainLogoSmall {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
   .tabTitle {
     transform: translateY(0);
   }
-  .greyBoxTitle {
+  .mainTitle {
     font-size: 30px;
   }
   .outerRow {
@@ -752,9 +876,23 @@
   .midLine {
     display: none;
   }
+  .statRow {
+    margin: 20px;
+  }
 }
 @media only screen and (max-width: 450px) {
-  .greyBoxTitle {
+  .logoImg {
+    height: 20px;
+  }
+  .logoImg1 {
+    display: none;
+    height: 20px;
+  }
+  .logImgHover {
+    display: none;
+    height: 20px;
+  }
+  .mainTitle {
     font-size: 25px;
   }
   .greyBoxText {
@@ -799,12 +937,12 @@
     width: 50%;
   }
   .headerPhone {
-    margin-top: 10vh;
-    height: 70vh;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 10px;
   }
   .phoneTitle {
     text-align: left;
@@ -835,10 +973,6 @@
   .header {
     height: 120vh;
   }
-  #mainLogo {
-    height: 20px;
-    width: 125px;
-  }
   #bottomLogo {
     height: 20px;
     width: 125px;
@@ -849,7 +983,7 @@
   .networkSmall {
     font-size: 20px;
   }
-  .greyBoxTitle {
+  .mainTitle {
     font-size: 20px;
   }
 }
