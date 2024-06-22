@@ -1,0 +1,76 @@
+:root {
+    --moonBlue: #721CFF;
+    --moonBlueDark: #38364b;
+    --moonBlack: #03001C;
+}
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 100px;
+    left: 100px;
+    height: 70px;
+}
+.topNav {
+    top: 0;
+}
+.bottomNav {
+    bottom: 0;
+}
+.mainbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--moonBlack);
+    color: white
+}
+.line {
+    background: var(--moonBlueDark);
+    position: fixed;
+}
+.topLine {
+    left: 0;
+    right: 0;
+    top: 70px;
+    height: 1px;
+}
+.bottomLine {
+    left: 0;
+    right: 0;
+    bottom: 70px;
+    height: 1px;
+}
+.leftLine {
+    left: 70px;
+    bottom: 0;
+    top: 0;
+    width: 1px;
+}
+.rightLine {
+    right: 70px;
+    bottom: 0;
+    top: 0;
+    width: 1px;
+}
+#logo {
+    height: 30px;
+    width: 188px;
+}
+.mainTitle {
+    font-size: 25px;
+}
+.turnstyleBtn {
+    border: thin solid var(--moonBlueDark);
+    border-radius: 7px;
+    padding: 5px 10px;
+}
+.turnstyleTxt {
+    font-size: 20px;
+}
