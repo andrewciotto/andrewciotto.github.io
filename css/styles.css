@@ -3,6 +3,14 @@
     --moonBlueDark: #38364b;
     --moonBlack: #03001C;
 }
+::-moz-selection {
+    color: white;
+    background: var(--moonBlue);
+}
+::selection {
+    color: white;
+    background: var(--moonBlue);
+}
 .nav {
     position: fixed;
     display: flex;
@@ -65,12 +73,108 @@
 }
 .mainTitle {
     font-size: 25px;
+    margin-bottom: 10px;
+    /* overflow-wrap: break-word; */
+    text-align: center;
+}
+.mainTitleFixed {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .turnstyleBtn {
-    border: thin solid var(--moonBlueDark);
-    border-radius: 7px;
-    padding: 5px 10px;
+    /* border: thin solid var(--moonBlueDark); */
+    outline: thin solid var(--moonBlueDark);
+    border-radius: 8px;
+    /* padding: 7px 20px 7px 25px; */
+    padding: 0px 20px 0 10px;
+    overflow: hidden;
+    /* height: 51px; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+} 
+.turnstyleBtn:hover {
+    outline: thin solid white;
+}
+.turnstyleItem {
+    /* border: 9px solid var(--moonBlack); */
+    border: 10px solid var(--moonBlack);
+    height: 43px;
+    overflow: hidden;
 }
 .turnstyleTxt {
-    font-size: 20px;
+    font-size: 15px;
+    transition: all ease-in-out 0.3s;
+    /* transform: translateY(-69px); */
+}
+.turnstyleBtn:hover .turnstyleTxt {
+    /* transform: translateY(-104px); */
+    transform: translateY(-100%);
+}
+.turnstyleSwipe {
+    height: 100px;
+    margin-top: -30px;
+    margin-left: -90px;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.509);
+    transform: rotate(45deg);
+    transition: all ease-in-out 0.4s;
+    /* position: absolute; */
+}
+.turnstyleBtn:hover .turnstyleSwipe {
+    transform: rotate(45deg) translate(300px, -300px);
+}
+.turnstyleArrow {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: green; */
+}
+.arrowLine {
+    width: 20px;
+    height: 1px;
+    background-color: white;
+}
+.arrowHead {
+    background-color: white;
+    width: 7px;
+    height: 0px;
+    position: absolute;
+    transform: translateX(6px);
+    transition: all ease-in-out 0.3s;
+}
+.turnstyleBtn:hover .topArrow {
+    transform: translateX(6px) rotate(30deg) translateY(-2px);
+    height: 1px;
+}
+.turnstyleBtn:hover .bottomArrow {
+    transform: translateX(6px) rotate(-30deg) translateY(2px);
+    height: 1px;
+}
+@media screen and (max-width: 600px) {
+    .bottomNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .leftLine {
+        left: 20px;
+    }
+    .rightLine {
+        right: 20px;
+    }
+    .nav {
+        right: 40px;
+        left: 40px;
+    }
+    .mainTitleFixed {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }
