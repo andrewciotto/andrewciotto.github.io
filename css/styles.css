@@ -12,7 +12,7 @@
     background: var(--moonBlue);
 }
 .nav {
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +41,7 @@
 }
 .line {
     background: var(--moonBlueDark);
-    position: fixed;
+    position: absolute;
 }
 .topLine {
     left: 0;
